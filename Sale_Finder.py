@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import notification
-
 from notification import send_notification
 
 receiver_email = "even.vehus@gmail.com"
