@@ -1,7 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
+import notification
 
+from notification import send_notification
 
+receiver_email = "even.vehus@gmail.com"
 url = "https://evenstadmusikk.no/search?q=lagersalg&Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234%7CPrdGruppeLev2ID%C2%A41:PrdGruppeLev2ID%C2%A41_37%7CPrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7"
 
 headers = {
@@ -20,7 +23,7 @@ if response.status_code == 200:
 
         guitars.append(name)
 
-    for guitar in guitars:
-        print(f"Name: {guitar}")
+    send_notification(guitars, receiver_email)
+
 else:
     print(f"Failed to retrieve the page. Status code: {response.status_code}")
