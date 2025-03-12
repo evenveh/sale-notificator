@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Renamed function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sale_Finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sale_Finder.py" afterDir="false" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Trying with Selenium. Able to retrieve sale prices.">
+      <change beforePath="$PROJECT_DIR$/seleniumtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumtest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Sale_Finder.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gptsoup.executor&quot;: &quot;Run&quot;,
-    &quot;Python.notification.executor&quot;: &quot;Run&quot;,
-    &quot;Python.webg_scraping.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Sale_Finder.executor": "Run",
+    "Python.gptsoup.executor": "Run",
+    "Python.notification.executor": "Run",
+    "Python.seleniumtest.executor": "Run",
+    "Python.webg_scraping.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,7 +74,7 @@
       <workItem from="1741537208197" duration="5259000" />
       <workItem from="1741591592750" duration="6375000" />
       <workItem from="1741688035861" duration="642000" />
-      <workItem from="1741774200791" duration="726000" />
+      <workItem from="1741774200791" duration="1403000" />
     </task>
     <task id="LOCAL−00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -111,7 +111,21 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1741603718776</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Trying with Selenium. Able to retrieve sale prices.">
+      <option name="closed" value="true" />
+      <created>1741775151485</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1741775151485</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Trying with Selenium. Able to retrieve sale prices.">
+      <option name="closed" value="true" />
+      <created>1741775180833</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1741775180833</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,12 +137,14 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="Created notification function. Dummy for now" />
     <MESSAGE value="Renamed function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed function" />
+    <MESSAGE value="Trying with Selenium. Able to retrieve sale prices." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying with Selenium. Able to retrieve sale prices." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$webg_scraping.coverage" NAME="webg_scraping Coverage Results" MODIFIED="1741540722874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$notification.coverage" NAME="notification Coverage Results" MODIFIED="1741598477070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$gptsoup.coverage" NAME="gptsoup Coverage Results" MODIFIED="1741599961413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$seleniumtest.coverage" NAME="seleniumtest Coverage Results" MODIFIED="1741774954693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

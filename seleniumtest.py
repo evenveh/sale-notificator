@@ -11,15 +11,12 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 
-# Initialize WebDriver
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-# Open the URL
 url = "https://evenstadmusikk.no/search?q=lagersalg&Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234%7CPrdGruppeLev2ID%C2%A41:PrdGruppeLev2ID%C2%A41_37%7CPrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7"
 driver.get(url)
 
-# Wait for JavaScript to load (adjust if needed)
 time.sleep(5)
 
 # Find all products
