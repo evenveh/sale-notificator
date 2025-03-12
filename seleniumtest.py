@@ -5,39 +5,40 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
-# Setup Chrome options
-chrome_options = Options()
-chrome_options.add_argument("--headless")
-chrome_options.add_argument("--disable-gpu")
-chrome_options.add_argument("--no-sandbox")
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options=chrome_options)
+def get_guitar_sales():
+    # Setup Chrome options
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
 
-url = "https://evenstadmusikk.no/search?q=lagersalg&Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234%7CPrdGruppeLev2ID%C2%A41:PrdGruppeLev2ID%C2%A41_37%7CPrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7"
-driver.get(url)
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
 
-time.sleep(5)
+    url = "https://evenstadmusikk.no/search?q=lagersalg&Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234%7CPrdGruppeLev2ID%C2%A41:PrdGruppeLev2ID%C2%A41_37%7CPrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7"
+    driver.get(url)
 
-# Find all products
-guitars = []
-products = driver.find_elements(By.CLASS_NAME, "WebPubElement.pub-productlisting")
+    time.sleep(5)
 
-for product in products:
-    try:
-        name_tag = product.find_element(By.CLASS_NAME, "AddHeader1")
-        name = name_tag.text.strip() if name_tag else "Unknown Guitar"
+    # Find all products
+    guitars = []
+    products = driver.find_elements(By.CLASS_NAME, "WebPubElement.pub-productlisting")
 
-        sale_tag = product.find_element(By.CLASS_NAME, "YouSavePercentLabel")
-        sale = sale_tag.text.strip() if sale_tag else "No discount"
+    for product in products:
+        try:
+            name_tag = product.find_element(By.CLASS_NAME, "AddHeader1")
+            name = name_tag.text.strip() if name_tag else "Unknown Guitar"
 
-        print(f"{name}: {sale}")
-        guitars.append(f"{name}: {sale}")
+            sale_tag = product.find_element(By.CLASS_NAME, "YouSavePercentLabel")
+            sale = sale_tag.text.strip() if sale_tag else "No discount"
 
-    except Exception as e:
-        print(f"Error: {e}")
+            print(f"{name}: {sale}")
+            guitars.append(f"{name}: {sale}")
 
-driver.quit()
+        except Exception as e:
+            print(f"Error: {e}")
 
-# Example notification function call (comment out if not needed)
-# send_notification(guitars, receiver_email)
+    driver.quit()
+
+    return guitars
