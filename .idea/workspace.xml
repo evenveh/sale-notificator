@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="created main function">
-      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Using selenium to retrieve web page data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seleniumtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumtest.py" afterDir="false" />
@@ -181,7 +179,35 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1741790690246</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Added functionality to send mail">
+      <option name="closed" value="true" />
+      <created>1741790872562</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1741790872562</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Added functionality to send mail">
+      <option name="closed" value="true" />
+      <created>1741790877029</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1741790877029</updated>
+    </task>
+    <task id="LOCAL−00013" summary="Added functionality to send mail">
+      <option name="closed" value="true" />
+      <created>1741790885240</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1741790885240</updated>
+    </task>
+    <task id="LOCAL−00014" summary="Using selenium to retrieve web page data">
+      <option name="closed" value="true" />
+      <created>1741790904570</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1741790904570</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +223,9 @@
     <MESSAGE value="Removing comments" />
     <MESSAGE value="Added gitignore" />
     <MESSAGE value="created main function" />
-    <option name="LAST_COMMIT_MESSAGE" value="created main function" />
+    <MESSAGE value="Added functionality to send mail" />
+    <MESSAGE value="Using selenium to retrieve web page data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using selenium to retrieve web page data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
