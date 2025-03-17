@@ -38,4 +38,4 @@ def get_guitar_sales():
             except Exception as e:
                 print(f"Error: {e}")
 
-    return guitars
+    return guitars,url
