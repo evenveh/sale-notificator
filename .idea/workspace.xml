@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Moved urls to secrets folder" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Moved urls to secrets file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +248,14 @@
       <option name="presentableId" value="LOCAL−00020" />
       <updated>1742200722641</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL−00021" summary="Moved urls to secrets file">
+      <option name="closed" value="true" />
+      <created>1742200784945</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1742200784945</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +278,8 @@
     <MESSAGE value="updated workspace.xml" />
     <MESSAGE value="Added url to mail" />
     <MESSAGE value="Moved urls to secrets folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved urls to secrets folder" />
+    <MESSAGE value="Moved urls to secrets file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved urls to secrets file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

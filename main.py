@@ -1,5 +1,5 @@
 from notification import send_mail
-from seleniumtest import get_guitar_sales
+from sale_finder import get_guitar_sales
 
 
 if __name__ == "__main__":
