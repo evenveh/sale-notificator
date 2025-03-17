@@ -13,6 +13,6 @@ def send_mail(guitars):
         connection.sendmail(from_addr=TEST_EMAIL,
                             to_addrs=RECIPIENT,
                             msg = f"Subject: New Ibanez at Evenstad outlet\n\nThere are currently {len(guitars)} guitars at Evenstad's outlet page:\n"
-                                  f"{guitars_string}")
+                                  f"{guitars_string}\n URL: https://evenstadmusikk.no/search?q=lagersalg&Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234|PrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7")
 
     print(f"An email has been sent to {RECIPIENT}")
