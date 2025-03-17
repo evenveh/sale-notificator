@@ -10,12 +10,10 @@ import time
 
 def get_guitar_sales():
     url = URL_IBANEZ_GUITARS_AND_BASS
-
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
-
     service = Service(ChromeDriverManager().install())
 
     with webdriver.Chrome(service=service, options=chrome_options) as driver:
@@ -23,7 +21,8 @@ def get_guitar_sales():
         driver.get(url)
         time.sleep(2)
         guitars = []
-        products = driver.find_elements(By.CLASS_NAME, "WebPubElement.pub-productlisting")
+        product_class_name = "WebPubElement.pub-productlisting"
+        products = driver.find_elements(By.CLASS_NAME, product_class_name)
 
         for product in products:
             try:
