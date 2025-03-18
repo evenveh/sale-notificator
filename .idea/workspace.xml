@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Moved urls to secrets file" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +110,7 @@
       <workItem from="1741776354002" duration="17000" />
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
+      <workItem from="1742217809254" duration="3751000" />
     </task>
     <task id="LOCAL−00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -255,7 +259,35 @@
       <option name="presentableId" value="LOCAL−00021" />
       <updated>1742200784945</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL−00022" summary="Deleted unused files. Updated main and renamedseleniumtest to sale_finder">
+      <option name="closed" value="true" />
+      <created>1742201440805</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1742201440805</updated>
+    </task>
+    <task id="LOCAL−00023" summary="Deleted unused files. Updated main and renamedseleniumtest to sale_finder">
+      <option name="closed" value="true" />
+      <created>1742201450692</created>
+      <option name="number" value="LOCAL−00023" />
+      <option name="presentableId" value="LOCAL−00023" />
+      <updated>1742201450692</updated>
+    </task>
+    <task id="LOCAL−00024" summary="also passing the url as a variable">
+      <option name="closed" value="true" />
+      <created>1742201686485</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1742201686485</updated>
+    </task>
+    <task id="LOCAL−00025" summary="also passing the url as a variable">
+      <option name="closed" value="true" />
+      <created>1742201699365</created>
+      <option name="number" value="LOCAL−00025" />
+      <option name="presentableId" value="LOCAL−00025" />
+      <updated>1742201699365</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +311,9 @@
     <MESSAGE value="Added url to mail" />
     <MESSAGE value="Moved urls to secrets folder" />
     <MESSAGE value="Moved urls to secrets file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved urls to secrets file" />
+    <MESSAGE value="Deleted unused files. Updated main and renamedseleniumtest to sale_finder" />
+    <MESSAGE value="also passing the url as a variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="also passing the url as a variable" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -287,6 +321,6 @@
     <SUITE FILE_PATH="coverage/PythonProject$notification.coverage" NAME="notification Coverage Results" MODIFIED="1741598477070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$gptsoup.coverage" NAME="gptsoup Coverage Results" MODIFIED="1741599961413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$seleniumtest.coverage" NAME="seleniumtest Coverage Results" MODIFIED="1741775644336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1741939940952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1742217834784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
