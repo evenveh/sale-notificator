@@ -6,6 +6,7 @@ import time
 def main_loop():
     test = True
     old_guitars, url = get_guitar_sales()
+
     while test:
         guitars, url = get_guitar_sales()
         old_guitars = compare_sales(old_products=old_guitars, new_products=guitars, url = url)
