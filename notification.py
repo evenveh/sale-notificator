@@ -1,12 +1,12 @@
 import smtplib
 from secrets import PASSWORD, TEST_EMAIL, RECIPIENT
 
-def unwrap_guitar_string(guitars):
-    guitars_string = "\n".join(guitars)
-    return guitars_string
+def unwrap_product_string(products):
+    product_string = "\n".join(products)
+    return product_string
 
 def send_mail(guitars, url):
-    guitars_string = unwrap_guitar_string(guitars)
+    guitars_string = unwrap_product_string(guitars)
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
         connection.login(user=TEST_EMAIL, password=PASSWORD)
