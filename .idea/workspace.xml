@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Changed the message">
-      <change afterPath="$PROJECT_DIR$/sale_comparer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Created functions to compare sales" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -359,7 +356,21 @@
       <option name="presentableId" value="LOCAL−00032" />
       <updated>1742376643891</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL−00033" summary="Created functions to compare sales">
+      <option name="closed" value="true" />
+      <created>1742379051208</created>
+      <option name="number" value="LOCAL−00033" />
+      <option name="presentableId" value="LOCAL−00033" />
+      <updated>1742379051208</updated>
+    </task>
+    <task id="LOCAL−00034" summary="Created functions to compare sales">
+      <option name="closed" value="true" />
+      <created>1742379066807</created>
+      <option name="number" value="LOCAL−00034" />
+      <option name="presentableId" value="LOCAL−00034" />
+      <updated>1742379066807</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +424,8 @@
     <MESSAGE value="lowercase for secrets file" />
     <MESSAGE value="Creating a while loop for infinite run" />
     <MESSAGE value="Changed the message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the message" />
+    <MESSAGE value="Created functions to compare sales" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created functions to compare sales" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

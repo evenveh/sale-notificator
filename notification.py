@@ -12,7 +12,7 @@ def send_mail(guitars, url):
         connection.login(user=TEST_EMAIL, password=PASSWORD)
         connection.sendmail(from_addr=TEST_EMAIL,
                             to_addrs=RECIPIENT,
-                            msg = f"Subject: Ibanez guitars at Evenstad Outlet\n\nThere are currently {len(guitars)} guitars at Evenstad's outlet page:\n"
+                            msg = f"Subject: New or not new Ibanez guitars at Evenstad Outlet\n\nThere are currently {len(guitars)} guitars at Evenstad's outlet page:\n"
                                   f"{guitars_string}\n URL:" + url)
 
     print(f"An email has been sent to {RECIPIENT}")
