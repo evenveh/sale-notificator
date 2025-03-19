@@ -1,5 +1,5 @@
 import smtplib
-from Secrets import PASSWORD, TEST_EMAIL, RECIPIENT
+from secrets import PASSWORD, TEST_EMAIL, RECIPIENT
 
 def unwrap_guitar_string(guitars):
     guitars_string = "\n".join(guitars)
