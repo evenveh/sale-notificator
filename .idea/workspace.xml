@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="renamed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sale_finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/sale_finder.py" afterDir="false" />
-    </list>
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Creating a while loop for infinite run" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -327,7 +321,35 @@
       <option name="presentableId" value="LOCAL−00027" />
       <updated>1742332034547</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL−00028" summary="lowercase for secrets file">
+      <option name="closed" value="true" />
+      <created>1742376417962</created>
+      <option name="number" value="LOCAL−00028" />
+      <option name="presentableId" value="LOCAL−00028" />
+      <updated>1742376417963</updated>
+    </task>
+    <task id="LOCAL−00029" summary="lowercase for secrets file">
+      <option name="closed" value="true" />
+      <created>1742376427584</created>
+      <option name="number" value="LOCAL−00029" />
+      <option name="presentableId" value="LOCAL−00029" />
+      <updated>1742376427584</updated>
+    </task>
+    <task id="LOCAL−00030" summary="lowercase for secrets file">
+      <option name="closed" value="true" />
+      <created>1742376432458</created>
+      <option name="number" value="LOCAL−00030" />
+      <option name="presentableId" value="LOCAL−00030" />
+      <updated>1742376432458</updated>
+    </task>
+    <task id="LOCAL−00031" summary="Creating a while loop for infinite run">
+      <option name="closed" value="true" />
+      <created>1742376460641</created>
+      <option name="number" value="LOCAL−00031" />
+      <option name="presentableId" value="LOCAL−00031" />
+      <updated>1742376460641</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +400,9 @@
     <MESSAGE value="also passing the url as a variable" />
     <MESSAGE value="Added Dockerfile" />
     <MESSAGE value="renamed" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed" />
+    <MESSAGE value="lowercase for secrets file" />
+    <MESSAGE value="Creating a while loop for infinite run" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating a while loop for infinite run" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
