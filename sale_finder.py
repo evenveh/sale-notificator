@@ -3,9 +3,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
-from Secrets import URL_ALL_GUITARS, URL_IBANEX_GUITARS, URL_IBANEZ_GUITARS_AND_BASS
+from secrets import URL_ALL_GUITARS, URL_IBANEX_GUITARS, URL_IBANEZ_GUITARS_AND_BASS
 import time
-
 
 
 def get_guitar_sales():
