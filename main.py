@@ -10,7 +10,7 @@ def main_loop():
     while test:
         guitars, url = get_guitar_sales()
         old_guitars = compare_sales(old_products=old_guitars, new_products=guitars, url = url)
-        send_mail(guitars, url)
+        #send_mail(guitars, url)
         time.sleep(60*60)
 
 

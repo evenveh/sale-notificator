@@ -405,7 +405,21 @@
       <option name="presentableId" value="LOCAL−00039" />
       <updated>1742380282545</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL−00040" summary="whitespace">
+      <option name="closed" value="true" />
+      <created>1742380580888</created>
+      <option name="number" value="LOCAL−00040" />
+      <option name="presentableId" value="LOCAL−00040" />
+      <updated>1742380580888</updated>
+    </task>
+    <task id="LOCAL−00041" summary="whitespace">
+      <option name="closed" value="true" />
+      <created>1742380608429</created>
+      <option name="number" value="LOCAL−00041" />
+      <option name="presentableId" value="LOCAL−00041" />
+      <updated>1742380608429</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
