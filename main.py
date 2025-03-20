@@ -4,7 +4,7 @@ from secrets import URL_ALL_GUITARS, URL_IBANEX_GUITARS, URL_IBANEZ_GUITARS_AND_
 import time
 
 def main_loop():
-    url = URL_IBANEZ_GUITARS_AND_BASS
+    url = URL_ALL_GUITARS
     test = True
     old_guitars = get_guitar_sales(url)
     while test:
