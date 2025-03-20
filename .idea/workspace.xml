@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Removed unused variable" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Spelling" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,10 +76,10 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
         <env name="PASSWORD" value=" yckm pjdx hcfa oagk" />
+        <env name="PYTHONUNBUFFERED" value="1" />
         <env name="RECIPIENT" value="workaholix55@gmail.com" />
-        <env name="TEST_EMAIL" value="salenotificator@gmail.com" />
+        <env name="FROM_EMAIL" value="salenotificator@gmail.com" />
         <env name="URL_IBANEZ_GUITARS_AND_BASS" value="https://evenstadmusikk.no/search?q=lagersalg&amp;Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234|PrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7" />
       </envs>
       <option name="SDK_HOME" value="" />
@@ -131,13 +131,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00003" summary="workspace">
-      <option name="closed" value="true" />
-      <created>1741600950820</created>
-      <option name="number" value="LOCAL−00003" />
-      <option name="presentableId" value="LOCAL−00003" />
-      <updated>1741600950820</updated>
     </task>
     <task id="LOCAL−00004" summary="Created notification function. Dummy for now">
       <option name="closed" value="true" />
@@ -475,7 +468,14 @@
       <option name="presentableId" value="LOCAL−00051" />
       <updated>1742458613194</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL−00052" summary="Spelling">
+      <option name="closed" value="true" />
+      <created>1742480086684</created>
+      <option name="number" value="LOCAL−00052" />
+      <option name="presentableId" value="LOCAL−00052" />
+      <updated>1742480086684</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +505,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding more urls to check" />
     <MESSAGE value="updated workspace.xml" />
     <MESSAGE value="Added url to mail" />
     <MESSAGE value="Moved urls to secrets folder" />
@@ -530,7 +529,8 @@
     <MESSAGE value="Whitespace" />
     <MESSAGE value="Changed spelling" />
     <MESSAGE value="Removed unused variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unused variable" />
+    <MESSAGE value="Spelling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spelling" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

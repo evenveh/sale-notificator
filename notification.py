@@ -1,5 +1,5 @@
 import smtplib
-from secrets import PASSWORD, TEST_EMAIL, RECIPIENT
+from secrets import PASSWORD, FROM_EMAIL, RECIPIENT
 
 def unwrap_product_string(products):
     product_string = "\n".join(products)
@@ -8,8 +8,8 @@ def unwrap_product_string(products):
 def send_mail(message):
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login(user=TEST_EMAIL, password=PASSWORD)
-        connection.sendmail(from_addr=TEST_EMAIL,
+        connection.login(user=FROM_EMAIL, password=PASSWORD)
+        connection.sendmail(from_addr=FROM_EMAIL,
                             to_addrs=RECIPIENT,
                             msg = message)
 
