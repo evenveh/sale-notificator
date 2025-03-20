@@ -2,7 +2,7 @@ from notification import send_mail, unwrap_product_string
 
 def compare_sales(old_products, new_products, url):
     if old_products == new_products:
-        print("No changes in the sales.")
+        print("No change in the sales.")
         return new_products
     else:
         for product in new_products:
