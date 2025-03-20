@@ -1,6 +1,6 @@
 FROM python:3.13
 
-ADD main.py . notification.py ./ sale_finder.py ./ secrets.py ./
+ADD main.py . notification.py ./ sale_finder.py ./ secrets.py ./ sale_comparator.py ./
 RUN pip install requests selenium webdriver_manager chromium
 
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
