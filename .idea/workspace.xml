@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Increased sleep time to 12 hours" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Whitespace" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -447,7 +447,28 @@
       <option name="presentableId" value="LOCAL−00045" />
       <updated>1742455433814</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL−00046" summary="Increased sleep time to 12 hours">
+      <option name="closed" value="true" />
+      <created>1742458276993</created>
+      <option name="number" value="LOCAL−00046" />
+      <option name="presentableId" value="LOCAL−00046" />
+      <updated>1742458276993</updated>
+    </task>
+    <task id="LOCAL−00047" summary="Unused import">
+      <option name="closed" value="true" />
+      <created>1742458324308</created>
+      <option name="number" value="LOCAL−00047" />
+      <option name="presentableId" value="LOCAL−00047" />
+      <updated>1742458324308</updated>
+    </task>
+    <task id="LOCAL−00048" summary="Whitespace">
+      <option name="closed" value="true" />
+      <created>1742458329469</created>
+      <option name="number" value="LOCAL−00048" />
+      <option name="presentableId" value="LOCAL−00048" />
+      <updated>1742458329469</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,8 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created main function" />
-    <MESSAGE value="Added functionality to send mail" />
     <MESSAGE value="Using selenium to retrieve web page data" />
     <MESSAGE value="Unwrapping string so that all guitars are in the mail" />
     <MESSAGE value="Adding more urls to check" />
@@ -502,7 +521,9 @@
     <MESSAGE value="Sending custom message from sale_comparator" />
     <MESSAGE value="Removed test" />
     <MESSAGE value="Increased sleep time to 12 hours" />
-    <option name="LAST_COMMIT_MESSAGE" value="Increased sleep time to 12 hours" />
+    <MESSAGE value="Unused import" />
+    <MESSAGE value="Whitespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Whitespace" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
