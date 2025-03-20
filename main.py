@@ -10,6 +10,5 @@ def main_loop():
         old_guitars = compare_sales(old_products=old_guitars, new_products=guitars, url = url)
         time.sleep(60*60*12)
 
-
 if __name__ == "__main__":
     main_loop()
