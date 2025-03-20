@@ -9,7 +9,7 @@ def compare_sales(old_products, new_products, url):
             if product not in old_products:
                 msg = f"New product on sale: {product}"
                 products_string = unwrap_product_string(new_products)
-                message = f"Subject: New Ibanez guitars at Evenstad Outlet\n\nThere is a new product on Evenstad's outlet page: {product}. \n There are currently {len(new_products)} guitars out: \n{products_string}\n\n URL: {url}"
+                message = f"Subject: New Ibanez guitar at Evenstad Outlet\n\nThere is a new product on Evenstad's outlet page: {product}. \n There are currently {len(new_products)} guitars out: \n{products_string}\n\n URL: {url}"
 
                 send_mail(message)
 
