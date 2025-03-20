@@ -1,4 +1,3 @@
-from notification import send_mail
 from sale_finder import get_guitar_sales
 from sale_comparator import compare_sales
 import time
