@@ -3,12 +3,11 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
-from secrets import URL_ALL_GUITARS, URL_IBANEX_GUITARS, URL_IBANEZ_GUITARS_AND_BASS
 import time
 
 
-def get_guitar_sales():
-    url = URL_IBANEZ_GUITARS_AND_BASS
+def get_guitar_sales(url):
+
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")
@@ -37,4 +36,4 @@ def get_guitar_sales():
             except Exception as e:
                 print(f"Error: {e}")
 
-    return guitars,url
+    return guitars
