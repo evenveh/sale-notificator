@@ -6,7 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 
-def get_guitar_sales(url):
+def get_sales(url):
 
     chrome_options = Options()
     chrome_options.add_argument("--headless")
