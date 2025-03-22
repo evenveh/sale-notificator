@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Whitespace">
-      <change afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Added tests">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,20 +194,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00016" summary="Adding more urls to check">
-      <option name="closed" value="true" />
-      <created>1741851917949</created>
-      <option name="number" value="LOCAL−00016" />
-      <option name="presentableId" value="LOCAL−00016" />
-      <updated>1741851917949</updated>
-    </task>
-    <task id="LOCAL−00017" summary="Adding more urls to check">
-      <option name="closed" value="true" />
-      <created>1741851926658</created>
-      <option name="number" value="LOCAL−00017" />
-      <option name="presentableId" value="LOCAL−00017" />
-      <updated>1741851926658</updated>
     </task>
     <task id="LOCAL−00018" summary="updated workspace.xml">
       <option name="closed" value="true" />
@@ -538,7 +524,21 @@
       <option name="presentableId" value="LOCAL−00064" />
       <updated>1742553941685</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL−00065" summary="Added tests">
+      <option name="closed" value="true" />
+      <created>1742632831187</created>
+      <option name="number" value="LOCAL−00065" />
+      <option name="presentableId" value="LOCAL−00065" />
+      <updated>1742632831188</updated>
+    </task>
+    <task id="LOCAL−00066" summary="Added tests">
+      <option name="closed" value="true" />
+      <created>1742632928774</created>
+      <option name="number" value="LOCAL−00066" />
+      <option name="presentableId" value="LOCAL−00066" />
+      <updated>1742632928774</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +568,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created functions to compare sales" />
     <MESSAGE value="Only send mail if there's a product change" />
     <MESSAGE value="Sending mail each interation to check that the program actually works.&#10;&#10;If this works, then we will start notifying only when there is a change on the page, but that has to be tested with some dummy lists first" />
     <MESSAGE value="Generaalizing" />
@@ -593,7 +592,8 @@
     <MESSAGE value="Changed from ADD to COPY" />
     <MESSAGE value="Changing url and frequency" />
     <MESSAGE value="Whitespace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Whitespace" />
+    <MESSAGE value="Added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
