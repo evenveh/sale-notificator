@@ -84,7 +84,22 @@
       <recent name="C:\Users\evenv\Documents\CodingProjects\PythonProject" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.TestCompareSales.test_both_new_and_expired_products">
+  <component name="RunManager" selected="Python tests.Python tests for tests.TestCompareSales">
+    <configuration name="Python tests for tests.TestCompareSales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.TestCompareSales&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for tests.TestCompareSales.test_both_new_and_expired_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -145,28 +160,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in tests.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for tests.TestCompareSales" />
         <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_both_new_and_expired_products" />
         <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_products_no_longer_on_sale" />
         <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_new_products_on_sale" />
         <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_no_changes_in_sales" />
-        <item itemvalue="Python tests.Python tests in tests.py" />
       </list>
     </recent_temporary>
   </component>
