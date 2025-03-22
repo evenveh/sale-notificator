@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Added tests">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,48 +193,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00018" summary="updated workspace.xml">
-      <option name="closed" value="true" />
-      <created>1741857886634</created>
-      <option name="number" value="LOCAL−00018" />
-      <option name="presentableId" value="LOCAL−00018" />
-      <updated>1741857886634</updated>
-    </task>
-    <task id="LOCAL−00019" summary="Added url to mail">
-      <option name="closed" value="true" />
-      <created>1742200355924</created>
-      <option name="number" value="LOCAL−00019" />
-      <option name="presentableId" value="LOCAL−00019" />
-      <updated>1742200355924</updated>
-    </task>
-    <task id="LOCAL−00020" summary="Moved urls to secrets folder">
-      <option name="closed" value="true" />
-      <created>1742200722641</created>
-      <option name="number" value="LOCAL−00020" />
-      <option name="presentableId" value="LOCAL−00020" />
-      <updated>1742200722641</updated>
-    </task>
-    <task id="LOCAL−00021" summary="Moved urls to secrets file">
-      <option name="closed" value="true" />
-      <created>1742200784945</created>
-      <option name="number" value="LOCAL−00021" />
-      <option name="presentableId" value="LOCAL−00021" />
-      <updated>1742200784945</updated>
-    </task>
-    <task id="LOCAL−00022" summary="Deleted unused files. Updated main and renamedseleniumtest to sale_finder">
-      <option name="closed" value="true" />
-      <created>1742201440805</created>
-      <option name="number" value="LOCAL−00022" />
-      <option name="presentableId" value="LOCAL−00022" />
-      <updated>1742201440805</updated>
-    </task>
-    <task id="LOCAL−00023" summary="Deleted unused files. Updated main and renamedseleniumtest to sale_finder">
-      <option name="closed" value="true" />
-      <created>1742201450692</created>
-      <option name="number" value="LOCAL−00023" />
-      <option name="presentableId" value="LOCAL−00023" />
-      <updated>1742201450692</updated>
     </task>
     <task id="LOCAL−00024" summary="also passing the url as a variable">
       <option name="closed" value="true" />
@@ -538,7 +495,49 @@
       <option name="presentableId" value="LOCAL−00066" />
       <updated>1742632928774</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL−00067" summary="Adding a ci for running test">
+      <option name="closed" value="true" />
+      <created>1742633760382</created>
+      <option name="number" value="LOCAL−00067" />
+      <option name="presentableId" value="LOCAL−00067" />
+      <updated>1742633760383</updated>
+    </task>
+    <task id="LOCAL−00068" summary="Removed docker image yaml file for now">
+      <option name="closed" value="true" />
+      <created>1742633871407</created>
+      <option name="number" value="LOCAL−00068" />
+      <option name="presentableId" value="LOCAL−00068" />
+      <updated>1742633871407</updated>
+    </task>
+    <task id="LOCAL−00069" summary="requirements.txt">
+      <option name="closed" value="true" />
+      <created>1742633933268</created>
+      <option name="number" value="LOCAL−00069" />
+      <option name="presentableId" value="LOCAL−00069" />
+      <updated>1742633933269</updated>
+    </task>
+    <task id="LOCAL−00070" summary="Remove requirements install">
+      <option name="closed" value="true" />
+      <created>1742634022768</created>
+      <option name="number" value="LOCAL−00070" />
+      <option name="presentableId" value="LOCAL−00070" />
+      <updated>1742634022768</updated>
+    </task>
+    <task id="LOCAL−00071" summary="Remove requirements install">
+      <option name="closed" value="true" />
+      <created>1742634135772</created>
+      <option name="number" value="LOCAL−00071" />
+      <option name="presentableId" value="LOCAL−00071" />
+      <updated>1742634135772</updated>
+    </task>
+    <task id="LOCAL−00072" summary="Test">
+      <option name="closed" value="true" />
+      <created>1742634252406</created>
+      <option name="number" value="LOCAL−00072" />
+      <option name="presentableId" value="LOCAL−00072" />
+      <updated>1742634252406</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,11 +567,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Only send mail if there's a product change" />
-    <MESSAGE value="Sending mail each interation to check that the program actually works.&#10;&#10;If this works, then we will start notifying only when there is a change on the page, but that has to be tested with some dummy lists first" />
-    <MESSAGE value="Generaalizing" />
-    <MESSAGE value="creating a string to unwrap products list into string" />
-    <MESSAGE value="whitespace" />
     <MESSAGE value="Sending custom message from sale_comparator" />
     <MESSAGE value="Removed test" />
     <MESSAGE value="Increased sleep time to 12 hours" />
@@ -593,7 +587,12 @@
     <MESSAGE value="Changing url and frequency" />
     <MESSAGE value="Whitespace" />
     <MESSAGE value="Added tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests" />
+    <MESSAGE value="Adding a ci for running test" />
+    <MESSAGE value="Removed docker image yaml file for now" />
+    <MESSAGE value="requirements.txt" />
+    <MESSAGE value="Remove requirements install" />
+    <MESSAGE value="Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
