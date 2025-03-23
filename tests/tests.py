@@ -1,7 +1,6 @@
 import unittest
 from unittest.mock import patch
 
-
 class TestCompareSales(unittest.TestCase):
 
     @patch('sale_comparator.send_mail')
@@ -10,7 +9,6 @@ class TestCompareSales(unittest.TestCase):
         old_products = ['Product A', 'Product B']
         new_products = ['Product A', 'Product B']
         url = 'http://example.com'
-
 
 
     @patch('sale_comparator.send_mail')
