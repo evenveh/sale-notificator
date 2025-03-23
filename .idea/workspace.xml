@@ -15,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="testing-environment-variables" />
+        <entry key="$PROJECT_DIR$" value="combine-update-messages" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,7 +68,7 @@
     "Python.webg_scraping.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "combine-update-messages",
     "last_opened_file_path": "C:/Users/evenv/Documents/CodingProjects/PythonProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,7 +83,34 @@
       <recent name="C:\Users\evenv\Documents\CodingProjects\PythonProject" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.TestCompareSales">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PASSWORD" value=" yckm pjdx hcfa oagk" />
+        <env name="RECIPIENT" value="workaholix55@gmail.com" />
+        <env name="TEST_EMAIL" value="salenotificator@gmail.com" />
+        <env name="URL_IBANEZ_GUITARS_AND_BASS" value="https://evenstadmusikk.no/search?q=lagersalg&amp;Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234|PrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for tests.TestCompareSales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -129,21 +156,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.TestCompareSales.test_no_changes_in_sales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestCompareSales.test_no_changes_in_sales&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for tests.TestCompareSales.test_products_no_longer_on_sale" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -161,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests.TestCompareSales" />
-        <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_both_new_and_expired_products" />
         <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_products_no_longer_on_sale" />
         <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_new_products_on_sale" />
-        <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_no_changes_in_sales" />
+        <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_both_new_and_expired_products" />
+        <item itemvalue="Python tests.Python tests for tests.TestCompareSales" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -193,20 +205,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00024" summary="also passing the url as a variable">
-      <option name="closed" value="true" />
-      <created>1742201686485</created>
-      <option name="number" value="LOCAL−00024" />
-      <option name="presentableId" value="LOCAL−00024" />
-      <updated>1742201686485</updated>
-    </task>
-    <task id="LOCAL−00025" summary="also passing the url as a variable">
-      <option name="closed" value="true" />
-      <created>1742201699365</created>
-      <option name="number" value="LOCAL−00025" />
-      <option name="presentableId" value="LOCAL−00025" />
-      <updated>1742201699365</updated>
     </task>
     <task id="LOCAL−00026" summary="Added Dockerfile">
       <option name="closed" value="true" />
@@ -537,7 +535,21 @@
       <option name="presentableId" value="LOCAL−00072" />
       <updated>1742634252406</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL−00073" summary="Test">
+      <option name="closed" value="true" />
+      <created>1742634331679</created>
+      <option name="number" value="LOCAL−00073" />
+      <option name="presentableId" value="LOCAL−00073" />
+      <updated>1742634331679</updated>
+    </task>
+    <task id="LOCAL−00074" summary="Test">
+      <option name="closed" value="true" />
+      <created>1742634360862</created>
+      <option name="number" value="LOCAL−00074" />
+      <option name="presentableId" value="LOCAL−00074" />
+      <updated>1742634360862</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +566,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="testing-environment-variables" />
+                        <option value="combine-update-messages" />
                       </list>
                     </value>
                   </entry>
