@@ -1,8 +1,6 @@
 from notification import send_mail, unwrap_product_string
 
 def compare_sales(old_products, new_products, url):
-    new_sales=[]
-    expired_sales=[]
 
     if old_products == new_products:
         print("No change in the sales.")
