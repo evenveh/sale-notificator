@@ -1,5 +1,6 @@
 import smtplib
 from secrets import PASSWORD, FROM_EMAIL, RECIPIENT
+from os import getenv
 
 def unwrap_product_string(products):
     product_string = "\n".join(products)
@@ -8,9 +9,9 @@ def unwrap_product_string(products):
 def send_mail(message):
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login(user=FROM_EMAIL, password=PASSWORD)
-        connection.sendmail(from_addr=FROM_EMAIL,
-                            to_addrs=RECIPIENT,
+        connection.login(user=getenv("FROM_EMAIL"), password=getenv("PASSWORD"))
+        connection.sendmail(from_addr=getenv("FROM_EMAIL"),
+                            to_addrs=getenv("RECIPIENT"),
                             msg = message)
 
-    print(f"An email has been sent to {RECIPIENT}")
+    print(f"An email has been sent to {getenv("RECIPIENT")}")

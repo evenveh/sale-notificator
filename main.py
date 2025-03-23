@@ -1,10 +1,10 @@
 from sale_finder import get_sales
 from sale_comparator import compare_sales
-from secrets import URL_ALL_GUITARS, URL_IBANEX_GUITARS, URL_IBANEZ_GUITARS_AND_BASS
 import time
+from os import getenv
 
 def main_loop():
-    url = URL_IBANEZ_GUITARS_AND_BASS
+    url = getenv("URL_IBANEZ_GUITARS_AND_BASS")
     test = True
     old_guitars = get_sales(url)
 

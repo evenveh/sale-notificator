@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="testing ci" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="testing ci">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="testing-environment-variables" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +70,7 @@
     "Python.webg_scraping.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "testing-environment-variables",
     "last_opened_file_path": "C:/Users/evenv/Documents/CodingProjects/PythonProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,7 +88,33 @@
       <recent name="C:\Users\evenv\Documents\CodingProjects\PythonProject\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_sale_comparator.py">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="FROM_EMAIL" value=" salenotificator@gmail.com" />
+        <env name="PASSWORD" value=" yckm pjdx hcfa oagk" />
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="RECIPIENT" value=" workaholix55@gmail.com" />
+        <env name="URL_IBANEZ_GUITARS_AND_BASS" value="https://evenstadmusikk.no/search?q=lagersalg&amp;Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234%7CPrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for tests.test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -161,13 +190,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.Python tests for tests.test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
+      <item itemvalue="Python tests.Python tests for tests.test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
+      <item itemvalue="Python tests.Python tests for tests.tests.TestCompareSales" />
+      <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
         <item itemvalue="Python tests.Python tests for tests.tests.TestCompareSales" />
-        <item itemvalue="Python tests.Python tests for tests.tests.TestCompareSales" />
-        <item itemvalue="Python tests.Python tests for tests.test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
         <item itemvalue="Python tests.Python tests for tests.test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
+        <item itemvalue="Python tests.Python tests for tests.test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
       </list>
     </recent_temporary>
   </component>
