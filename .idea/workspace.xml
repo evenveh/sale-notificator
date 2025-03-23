@@ -84,8 +84,8 @@
       <recent name="C:\Users\evenv\Documents\CodingProjects\PythonProject\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in tests.py">
-    <configuration name="Python tests for tests.TestCompareSales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Python tests for tests.test_sale_comparator.TestCompareSales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,11 +96,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.TestCompareSales&quot;" />
+      <option name="_new_target" value="&quot;tests.test_sale_comparator.TestCompareSales&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.tests.TestCompareSales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_sale_comparator.TestCompareSales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,11 +111,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.tests.TestCompareSales&quot;" />
+      <option name="_new_target" value="&quot;tests.test_sale_comparator.TestCompareSales&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.tests.TestCompareSales.test_both_new_and_expired_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,11 +126,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.tests.TestCompareSales.test_both_new_and_expired_products&quot;" />
+      <option name="_new_target" value="&quot;tests.test_sale_comparator.TestCompareSales.test_both_new_and_expired_products&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.tests.TestCompareSales.test_products_no_longer_on_sale" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,11 +141,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.tests.TestCompareSales.test_products_no_longer_on_sale&quot;" />
+      <option name="_new_target" value="&quot;tests.test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in tests.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_sale_comparator.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,17 +156,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tests.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_sale_comparator.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in tests.py" />
-        <item itemvalue="Python tests.Python tests for tests.TestCompareSales" />
-        <item itemvalue="Python tests.Python tests for tests.tests.TestCompareSales" />
-        <item itemvalue="Python tests.Python tests for tests.tests.TestCompareSales.test_both_new_and_expired_products" />
-        <item itemvalue="Python tests.Python tests for tests.tests.TestCompareSales.test_products_no_longer_on_sale" />
+        <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
+        <item itemvalue="Python tests.Python tests for tests.test_sale_comparator.TestCompareSales" />
+        <item itemvalue="Python tests.Python tests for tests.test_sale_comparator.TestCompareSales" />
+        <item itemvalue="Python tests.Python tests for tests.test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
+        <item itemvalue="Python tests.Python tests for tests.test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
       </list>
     </recent_temporary>
   </component>
