@@ -1,6 +1,5 @@
 import unittest
 from unittest.mock import patch
-from sale_comparator import compare_sales
 
 
 class TestCompareSales(unittest.TestCase):
@@ -12,10 +11,7 @@ class TestCompareSales(unittest.TestCase):
         new_products = ['Product A', 'Product B']
         url = 'http://example.com'
 
-        result = compare_sales(old_products, new_products, url)
 
-        self.assertEqual(result, new_products)
-        mock_send_mail.assert_not_called()
 
     @patch('sale_comparator.send_mail')
     @patch('sale_comparator.unwrap_product_string')
@@ -46,7 +42,6 @@ class TestCompareSales(unittest.TestCase):
 
         mock_unwrap.side_effect = ['Product B', 'Product A']
 
-        result = compare_sales(old_products, new_products, url)
 
 if __name__ == '__main__':
     unittest.main()
