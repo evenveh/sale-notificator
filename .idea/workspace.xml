@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="specifying what test file to run" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="testing ci" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,27 +194,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00027" summary="renamed">
-      <option name="closed" value="true" />
-      <created>1742332034547</created>
-      <option name="number" value="LOCAL−00027" />
-      <option name="presentableId" value="LOCAL−00027" />
-      <updated>1742332034547</updated>
-    </task>
-    <task id="LOCAL−00028" summary="lowercase for secrets file">
-      <option name="closed" value="true" />
-      <created>1742376417962</created>
-      <option name="number" value="LOCAL−00028" />
-      <option name="presentableId" value="LOCAL−00028" />
-      <updated>1742376417963</updated>
-    </task>
-    <task id="LOCAL−00029" summary="lowercase for secrets file">
-      <option name="closed" value="true" />
-      <created>1742376427584</created>
-      <option name="number" value="LOCAL−00029" />
-      <option name="presentableId" value="LOCAL−00029" />
-      <updated>1742376427584</updated>
     </task>
     <task id="LOCAL−00030" summary="lowercase for secrets file">
       <option name="closed" value="true" />
@@ -538,7 +517,28 @@
       <option name="presentableId" value="LOCAL−00075" />
       <updated>1742754959755</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL−00076" summary="Renaming tests">
+      <option name="closed" value="true" />
+      <created>1742755401005</created>
+      <option name="number" value="LOCAL−00076" />
+      <option name="presentableId" value="LOCAL−00076" />
+      <updated>1742755401007</updated>
+    </task>
+    <task id="LOCAL−00077" summary="testing ci">
+      <option name="closed" value="true" />
+      <created>1742755499529</created>
+      <option name="number" value="LOCAL−00077" />
+      <option name="presentableId" value="LOCAL−00077" />
+      <updated>1742755499529</updated>
+    </task>
+    <task id="LOCAL−00078" summary="testing ci">
+      <option name="closed" value="true" />
+      <created>1742755611363</created>
+      <option name="number" value="LOCAL−00078" />
+      <option name="presentableId" value="LOCAL−00078" />
+      <updated>1742755611363</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,8 +568,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Unused import" />
-    <MESSAGE value="Changed spelling" />
     <MESSAGE value="Removed unused variable" />
     <MESSAGE value="Spelling" />
     <MESSAGE value="Renamed sending email" />
@@ -593,7 +591,9 @@
     <MESSAGE value="unused lists" />
     <MESSAGE value="moved tests" />
     <MESSAGE value="specifying what test file to run" />
-    <option name="LAST_COMMIT_MESSAGE" value="specifying what test file to run" />
+    <MESSAGE value="Renaming tests" />
+    <MESSAGE value="testing ci" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing ci" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

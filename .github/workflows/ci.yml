@@ -21,5 +21,13 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
+      - name: Debug repository structure
+        run: |
+          pwd
+          ls -R
+
+      - name: Set PYTHONPATH to Root
+        run: echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
+
       - name: Run tests
         run: pytest tests/test_sale_comparator.py
