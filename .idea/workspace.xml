@@ -195,27 +195,6 @@
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
     </task>
-    <task id="LOCAL−00030" summary="lowercase for secrets file">
-      <option name="closed" value="true" />
-      <created>1742376432458</created>
-      <option name="number" value="LOCAL−00030" />
-      <option name="presentableId" value="LOCAL−00030" />
-      <updated>1742376432458</updated>
-    </task>
-    <task id="LOCAL−00031" summary="Creating a while loop for infinite run">
-      <option name="closed" value="true" />
-      <created>1742376460641</created>
-      <option name="number" value="LOCAL−00031" />
-      <option name="presentableId" value="LOCAL−00031" />
-      <updated>1742376460641</updated>
-    </task>
-    <task id="LOCAL−00032" summary="Changed the message">
-      <option name="closed" value="true" />
-      <created>1742376643891</created>
-      <option name="number" value="LOCAL−00032" />
-      <option name="presentableId" value="LOCAL−00032" />
-      <updated>1742376643891</updated>
-    </task>
     <task id="LOCAL−00033" summary="Created functions to compare sales">
       <option name="closed" value="true" />
       <created>1742379051208</created>
@@ -538,7 +517,28 @@
       <option name="presentableId" value="LOCAL−00078" />
       <updated>1742755611363</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL−00079" summary="testing ci">
+      <option name="closed" value="true" />
+      <created>1742755738393</created>
+      <option name="number" value="LOCAL−00079" />
+      <option name="presentableId" value="LOCAL−00079" />
+      <updated>1742755738393</updated>
+    </task>
+    <task id="LOCAL−00080" summary="Stripping the tests">
+      <option name="closed" value="true" />
+      <created>1742755847885</created>
+      <option name="number" value="LOCAL−00080" />
+      <option name="presentableId" value="LOCAL−00080" />
+      <updated>1742755847886</updated>
+    </task>
+    <task id="LOCAL−00081" summary="testing ci">
+      <option name="closed" value="true" />
+      <created>1742756045276</created>
+      <option name="number" value="LOCAL−00081" />
+      <option name="presentableId" value="LOCAL−00081" />
+      <updated>1742756045276</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +568,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed unused variable" />
     <MESSAGE value="Spelling" />
     <MESSAGE value="Renamed sending email" />
     <MESSAGE value="Removed whitespace" />
@@ -592,6 +591,7 @@
     <MESSAGE value="moved tests" />
     <MESSAGE value="specifying what test file to run" />
     <MESSAGE value="Renaming tests" />
+    <MESSAGE value="Stripping the tests" />
     <MESSAGE value="testing ci" />
     <option name="LAST_COMMIT_MESSAGE" value="testing ci" />
   </component>
