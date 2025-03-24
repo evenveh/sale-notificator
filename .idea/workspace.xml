@@ -169,6 +169,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.Python tests for tests.TestCompareSales" />
+      <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_both_new_and_expired_products" />
+      <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_new_products_on_sale" />
+      <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_products_no_longer_on_sale" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for tests.TestCompareSales.test_products_no_longer_on_sale" />
