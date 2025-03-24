@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Now using environment variables" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Rename">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,13 +226,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00038" summary="creating a string to unwrap products list into string">
-      <option name="closed" value="true" />
-      <created>1742380258843</created>
-      <option name="number" value="LOCAL−00038" />
-      <option name="presentableId" value="LOCAL−00038" />
-      <updated>1742380258843</updated>
     </task>
     <task id="LOCAL−00039" summary="whitespace">
       <option name="closed" value="true" />
@@ -568,7 +563,14 @@
       <option name="presentableId" value="LOCAL−00086" />
       <updated>1742757495726</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL−00087" summary="Rename">
+      <option name="closed" value="true" />
+      <created>1742834114102</created>
+      <option name="number" value="LOCAL−00087" />
+      <option name="presentableId" value="LOCAL−00087" />
+      <updated>1742834114102</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renamed sending email" />
     <MESSAGE value="Removed whitespace" />
     <MESSAGE value="Importing url to main to generalize sale_finder" />
     <MESSAGE value="Changing url to find more hits to test if the program works" />
@@ -623,7 +624,8 @@
     <MESSAGE value="Stripping the tests" />
     <MESSAGE value="testing ci" />
     <MESSAGE value="Now using environment variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now using environment variables" />
+    <MESSAGE value="Rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -1,9 +1,12 @@
+from notification import send_mail
 from sale_finder import get_sales
 from sale_comparator import compare_sales
 from secrets import URL_ALL_GUITARS, URL_IBANEZ_GUITARS, URL_IBANEZ_GUITARS_AND_BASS
 import time
 
 def main_loop():
+    send_mail(message=f"Subject: Sale Notificator\n\nSale notificator is up and running!")
+
     url = URL_IBANEZ_GUITARS_AND_BASS
     test = True
     old_guitars = get_sales(url)
