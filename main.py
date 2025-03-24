@@ -1,7 +1,7 @@
 from notification import send_mail
 from sale_finder import get_sales
 from sale_comparator import compare_sales
-from secrets import URL_ALL_GUITARS, URL_IBANEZ_GUITARS, URL_IBANEZ_GUITARS_AND_BASS
+from secrets import URL_IBANEZ_GUITARS_AND_BASS
 import time
 
 def main_loop():
