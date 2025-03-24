@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Sending a mail each time the application is running" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Unused imports">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,13 +226,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00040" summary="whitespace">
-      <option name="closed" value="true" />
-      <created>1742380580888</created>
-      <option name="number" value="LOCAL−00040" />
-      <option name="presentableId" value="LOCAL−00040" />
-      <updated>1742380580888</updated>
     </task>
     <task id="LOCAL−00041" summary="whitespace">
       <option name="closed" value="true" />
@@ -568,7 +563,14 @@
       <option name="presentableId" value="LOCAL−00088" />
       <updated>1742834588346</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL−00089" summary="Unused imports">
+      <option name="closed" value="true" />
+      <created>1742834784804</created>
+      <option name="number" value="LOCAL−00089" />
+      <option name="presentableId" value="LOCAL−00089" />
+      <updated>1742834784804</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Importing url to main to generalize sale_finder" />
     <MESSAGE value="Changing url to find more hits to test if the program works" />
     <MESSAGE value="Adding lists to append new and expired sales." />
     <MESSAGE value="Adding space" />
@@ -623,7 +624,8 @@
     <MESSAGE value="Now using environment variables" />
     <MESSAGE value="Rename" />
     <MESSAGE value="Sending a mail each time the application is running" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sending a mail each time the application is running" />
+    <MESSAGE value="Unused imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unused imports" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
