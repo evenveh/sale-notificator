@@ -1,5 +1,4 @@
 import smtplib
-from secrets import PASSWORD, FROM_EMAIL, RECIPIENT
 from get_secrets import get_secret
 
 def unwrap_product_string(products):
