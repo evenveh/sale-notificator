@@ -1,1 +1,4 @@
-secrets.py
+secrets/FROM_EMAIL.txt
+secrets/PASSWORD.txt
+secrets/RECIPIENT.txt
+secrets/URL_IBANEZ_GUITARS_AND_BASS.txt
