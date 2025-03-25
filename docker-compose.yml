@@ -1,0 +1,17 @@
+services:
+  myapp:
+    image: sale_notificator:latest
+    secrets:
+      - FROM_EMAIL
+      - PASSWORD
+      - RECIPIENT
+      - URL_IBANEZ_GUITARS_AND_BASS
+secrets:
+  FROM_EMAIL:
+    file: ./secrets/FROM_EMAIL.txt
+  PASSWORD:
+    file: ./secrets/PASSWORD.txt
+  RECIPIENT:
+    file: ./secrets/RECIPIENT.txt
+  URL_IBANEZ_GUITARS_AND_BASS:
+    file: ./secrets/URL_IBANEZ_GUITARS_AND_BASS.txt
