@@ -3,9 +3,11 @@ from sale_finder import get_sales
 from sale_comparator import compare_sales
 from secrets import URL_IBANEZ_GUITARS_AND_BASS
 import time
+from get_secrets import get_secret
 
 def main_loop():
-    send_mail(message=f"Subject: Sale Notificator\n\nSale notificator is up and running!")
+    url_secret = get_secret("URL_IBANEZ_GUITARS_AND_BASS")
+    send_mail(message=f"Subject: Sale Notificator\n\nSale notificator is up and running! url:{url_secret}")
 
     url = URL_IBANEZ_GUITARS_AND_BASS
     test = True
