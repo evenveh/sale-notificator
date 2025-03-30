@@ -22,8 +22,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t myusername/myapp:latest .
+          docker build -t evenve/sale-notificator:latest .
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push myusername/myapp:latest
+          docker push evenve/sale-notificator:latest
