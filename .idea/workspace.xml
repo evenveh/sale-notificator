@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="test - reversed">
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Changing image name to match repo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,13 +232,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00056" summary="Changing url to find more hits to test if the program works">
-      <option name="closed" value="true" />
-      <created>1742500022180</created>
-      <option name="number" value="LOCAL−00056" />
-      <option name="presentableId" value="LOCAL−00056" />
-      <updated>1742500022180</updated>
     </task>
     <task id="LOCAL−00057" summary="Adding lists to append new and expired sales.">
       <option name="closed" value="true" />
@@ -576,7 +569,14 @@
       <option name="presentableId" value="LOCAL−00104" />
       <updated>1743358792670</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL−00105" summary="Changing image name to match repo">
+      <option name="closed" value="true" />
+      <created>1743359545160</created>
+      <option name="number" value="LOCAL−00105" />
+      <option name="presentableId" value="LOCAL−00105" />
+      <updated>1743359545160</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test" />
     <MESSAGE value="unused lists" />
     <MESSAGE value="moved tests" />
     <MESSAGE value="specifying what test file to run" />
@@ -631,7 +630,8 @@
     <MESSAGE value="Added print statements for logging" />
     <MESSAGE value="test" />
     <MESSAGE value="test - reversed" />
-    <option name="LAST_COMMIT_MESSAGE" value="test - reversed" />
+    <MESSAGE value="Changing image name to match repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing image name to match repo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
