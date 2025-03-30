@@ -7,11 +7,11 @@ from get_secrets import get_secret
 
 def initialization():
     url = get_secret("URL_IBANEZ_GUITARS_AND_BASS")
-    initials_sales = get_sales(url)
-    products_string = unwrap_product_string(initials_sales)
+    initial_sales = get_sales(url)
+    products_string = unwrap_product_string(initial_sales)
     send_mail(message=f"Subject: Sale Notificator\n\nSale notificator is up and running!\n\n "
-                      f"There are currently {len(initials_sales)} guitars out: \n\n{products_string}\n\n URL: {url}")
-    return initials_sales, url
+                      f"There are currently {len(initial_sales)} guitars out: \n\n{products_string}\n\n URL: {url}")
+    return initial_sales, url
 
 
 def main_loop(old_guitars, url):
