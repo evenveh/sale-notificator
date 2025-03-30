@@ -1,6 +1,6 @@
 services:
   myapp:
-    image: sale_notificator:latest
+    image: evenve/sale-notificator:latest
     secrets:
       - FROM_EMAIL
       - PASSWORD
