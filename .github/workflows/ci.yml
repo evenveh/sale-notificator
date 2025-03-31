@@ -1,4 +1,4 @@
-name: Run Python Tests And Build Docker Image
+name: Run Tests and Build and Push Docker Image
 
 on:
   push:
