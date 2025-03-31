@@ -25,3 +25,4 @@ def main_loop(old_guitars, url):
 if __name__ == "__main__":
     initial_sales, url = initialization()
     main_loop(initial_sales, url)
+#test mergeable
