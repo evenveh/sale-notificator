@@ -51,41 +51,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.docker-compose.yml.myapp: Compose Deployment.executor": "Run",
-    "Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products.executor": "Run",
-    "Python tests.Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale.executor": "Run",
-    "Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales.executor": "Run",
-    "Python tests.Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale.executor": "Run",
-    "Python tests.Python tests for tests.TestCompareSales.executor": "Run",
-    "Python tests.Python tests for tests.TestCompareSales.test_both_new_and_expired_products.executor": "Run",
-    "Python tests.Python tests for tests.TestCompareSales.test_new_products_on_sale.executor": "Run",
-    "Python tests.Python tests for tests.TestCompareSales.test_no_changes_in_sales.executor": "Run",
-    "Python tests.Python tests for tests.TestCompareSales.test_products_no_longer_on_sale.executor": "Run",
-    "Python tests.Python tests in test_sale_comparator.py.executor": "Run",
-    "Python tests.Python tests in tests.py.executor": "Run",
-    "Python.Sale_Finder.executor": "Run",
-    "Python.gptsoup.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main_testing.executor": "Run",
-    "Python.notification.executor": "Run",
-    "Python.seleniumtest.executor": "Run",
-    "Python.webg_scraping.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/evenv/Documents/CodingProjects/PythonProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Docker",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.myapp: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.TestCompareSales.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.TestCompareSales.test_both_new_and_expired_products.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.TestCompareSales.test_new_products_on_sale.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.TestCompareSales.test_no_changes_in_sales.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.TestCompareSales.test_products_no_longer_on_sale.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_sale_comparator.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in tests.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Sale_Finder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gptsoup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_testing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.notification.executor&quot;: &quot;Run&quot;,
+    &quot;Python.seleniumtest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.webg_scraping.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/evenv/Documents/CodingProjects/PythonProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\evenv\Documents\CodingProjects\PythonProject" />
@@ -198,6 +198,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.Python tests for tests.tests.TestCompareSales" />
       <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
       <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale" />
       <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" />
@@ -238,13 +239,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00068" summary="Removed docker image yaml file for now">
-      <option name="closed" value="true" />
-      <created>1742633871407</created>
-      <option name="number" value="LOCAL−00068" />
-      <option name="presentableId" value="LOCAL−00068" />
-      <updated>1742633871407</updated>
     </task>
     <task id="LOCAL−00069" summary="requirements.txt">
       <option name="closed" value="true" />
@@ -582,7 +576,14 @@
       <option name="presentableId" value="LOCAL−00116" />
       <updated>1743581667315</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL−00117" summary="Updating tests">
+      <option name="closed" value="true" />
+      <created>1743582300052</created>
+      <option name="number" value="LOCAL−00117" />
+      <option name="presentableId" value="LOCAL−00117" />
+      <updated>1743582300052</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
