@@ -26,7 +26,7 @@ jobs:
           pip install pytest
 
       - name: Run tests
-        run: pytest tests/test_sale_comparator.py
+        run: PYTHONPATH=. pytest tests/test_sale_comparator.py
 
   build-and-push:
     runs-on: ubuntu-latest
