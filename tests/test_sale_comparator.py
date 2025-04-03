@@ -11,7 +11,7 @@ class TestCompareSales(unittest.TestCase):
         old_products = ['Product A', 'Product B']
         new_products = ['Product A', 'Product B']
         url = 'http://example.com'
-        compare_sales(old_products, new_products, url=url)
+        compare_sales(old_products, new_products)
 
         mock_send_mail.assert_not_called()
 
@@ -21,7 +21,7 @@ class TestCompareSales(unittest.TestCase):
         old_products = ['Product A']
         new_products = ['Product A', 'Product B']
         url = 'http://example.com'
-        compare_sales(old_products, new_products, url=url)
+        compare_sales(old_products, new_products)
         mock_send_mail.assert_called_once()
 
     @patch('sale_comparator.send_mail')
@@ -30,7 +30,7 @@ class TestCompareSales(unittest.TestCase):
         old_products = ['Product A', 'Product B']
         new_products = ['Product A']
         url = 'http://example.com'
-        compare_sales(old_products, new_products, url=url)
+        compare_sales(old_products, new_products)
 
         mock_send_mail.assert_called_once()
 
