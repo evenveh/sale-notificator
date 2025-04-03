@@ -2,7 +2,8 @@ from notification import send_mail, unwrap_product_string
 
 def create_message(new_products, old_products, url):
     if new_products & old_products:
-        msg = "There are new sales and old sales. \n\nNew:blabla \n\nold:albalba"
+        message = f"Subject: Update on sales\n\n New products.... Expired products...URL: {url}"
+        print("Sending message about product no longer for sale")
 
     if new_products and not old_products:
         products_string = unwrap_product_string(new_products)

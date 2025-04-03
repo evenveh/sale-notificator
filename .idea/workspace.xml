@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Creating create_message function" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="temporary change in tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,20 +226,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00081" summary="testing ci">
-      <option name="closed" value="true" />
-      <created>1742756045276</created>
-      <option name="number" value="LOCAL−00081" />
-      <option name="presentableId" value="LOCAL−00081" />
-      <updated>1742756045276</updated>
-    </task>
-    <task id="LOCAL−00082" summary="testing ci">
-      <option name="closed" value="true" />
-      <created>1742756199493</created>
-      <option name="number" value="LOCAL−00082" />
-      <option name="presentableId" value="LOCAL−00082" />
-      <updated>1742756199493</updated>
     </task>
     <task id="LOCAL−00083" summary="testing ci">
       <option name="closed" value="true" />
@@ -570,7 +556,21 @@
       <option name="presentableId" value="LOCAL−00129" />
       <updated>1743693898770</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL−00130" summary="removing url">
+      <option name="closed" value="true" />
+      <created>1743694031571</created>
+      <option name="number" value="LOCAL−00130" />
+      <option name="presentableId" value="LOCAL−00130" />
+      <updated>1743694031571</updated>
+    </task>
+    <task id="LOCAL−00131" summary="temporary change in tests">
+      <option name="closed" value="true" />
+      <created>1743694227656</created>
+      <option name="number" value="LOCAL−00131" />
+      <option name="presentableId" value="LOCAL−00131" />
+      <updated>1743694227656</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,8 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactor initialization and main loop. &#10;Added print statement for logging" />
-    <MESSAGE value="Variable renaming" />
     <MESSAGE value="Added print statements for logging" />
     <MESSAGE value="test - reversed" />
     <MESSAGE value="Changing image name to match repo" />
@@ -625,7 +623,9 @@
     <MESSAGE value="Started creating a function for creating the mail message" />
     <MESSAGE value="Trying to only build and push docker image if we're at master branch" />
     <MESSAGE value="Creating create_message function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating create_message function" />
+    <MESSAGE value="removing url" />
+    <MESSAGE value="temporary change in tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="temporary change in tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
