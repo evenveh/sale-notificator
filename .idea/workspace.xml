@@ -97,7 +97,7 @@
       <recent name="C:\Users\evenv\Documents\CodingProjects\PythonProject\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_notification.py">
+  <component name="RunManager" selected="Python tests.Python tests in test_sale_comparator.py">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -110,7 +110,7 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_notification.TestUnwrapProductString.test_send_mail_failure" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,11 +121,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_notification.TestUnwrapProductString.test_send_mail_failure&quot;" />
+      <option name="_new_target" value="&quot;test_sale_comparator.TestCompareSales.test_new_products_on_sale&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_notification.TestUnwrapProductString.test_send_mail_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,11 +136,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_notification.TestUnwrapProductString.test_send_mail_success&quot;" />
+      <option name="_new_target" value="&quot;test_sale_comparator.TestCompareSales.test_no_changes_in_sales&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,7 +151,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_sale_comparator.TestCompareSales.test_both_new_and_expired_products&quot;" />
+      <option name="_new_target" value="&quot;test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -186,19 +186,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_failure" />
-      <item itemvalue="Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_success" />
+      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale" />
+      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
       <item itemvalue="Python tests.Python tests in test_notification.py" />
-      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
+      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" />
       <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_notification.py" />
-        <item itemvalue="Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_failure" />
-        <item itemvalue="Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_success" />
         <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
-        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
+        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" />
+        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale" />
+        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
+        <item itemvalue="Python tests.Python tests in test_notification.py" />
       </list>
     </recent_temporary>
   </component>
