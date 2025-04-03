@@ -17,6 +17,7 @@ def initialization():
 def main_loop(old_guitars, url):
     while True:
         guitars = get_sales(url)
+        guitars = ["IBANEZ AWTP LIMITED EDITION"]
         new_products, old_products = compare_sales(old_products=old_guitars, new_products=guitars)
         message = create_message(new_products=new_products, old_products=old_products, url=url)
         send_mail(message)
