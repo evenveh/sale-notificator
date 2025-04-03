@@ -19,5 +19,3 @@ def compare_sales(old_products, new_products, url):
                 message = f"Subject: Product no longer for sale at Evenstad's Outlet\n\n The product: {product} is no longer for sale. \n There are currently {len(new_products)} guitars out: \n\n{products_string}\n\n URL: {url}"
                 print("Sending message about product no longer for sale")
                 send_mail(message)
-
-    return new_products

@@ -17,7 +17,8 @@ def initialization():
 def main_loop(old_guitars, url):
     while True:
         guitars = get_sales(url)
-        old_guitars = compare_sales(old_products=old_guitars, new_products=guitars, url=url)
+        compare_sales(old_products=old_guitars, new_products=guitars, url=url)
+        old_guitars = guitars
         time.sleep(60 * 60 * 3)
         print("Starting new loop")
 

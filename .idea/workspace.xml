@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Formatting">
-      <change beforePath="$PROJECT_DIR$/tests/test_sale_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_sale_comparator.py" afterDir="false" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Remobing comments">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sale_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/sale_comparator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,8 @@
   "keyToString": {
     "Docker.Dockerfile.executor": "Run",
     "Docker.docker-compose.yml.myapp: Compose Deployment.executor": "Run",
+    "Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_failure.executor": "Run",
+    "Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_success.executor": "Run",
     "Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products.executor": "Run",
     "Python tests.Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale.executor": "Run",
     "Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales.executor": "Run",
@@ -64,6 +68,7 @@
     "Python tests.Python tests for tests.TestCompareSales.test_new_products_on_sale.executor": "Run",
     "Python tests.Python tests for tests.TestCompareSales.test_no_changes_in_sales.executor": "Run",
     "Python tests.Python tests for tests.TestCompareSales.test_products_no_longer_on_sale.executor": "Run",
+    "Python tests.Python tests in test_notification.py.executor": "Run",
     "Python tests.Python tests in test_sale_comparator.py.executor": "Run",
     "Python tests.Python tests in test_sale_finder.py.executor": "Run",
     "Python tests.Python tests in test_send_mail.py.executor": "Run",
@@ -96,7 +101,7 @@
       <recent name="C:\Users\evenv\Documents\CodingProjects\PythonProject\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products">
+  <component name="RunManager" selected="Python tests.Python tests in test_notification.py">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -107,6 +112,36 @@
       <deployment type="dockerfile">
         <settings />
       </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_notification.TestUnwrapProductString.test_send_mail_failure" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_notification.TestUnwrapProductString.test_send_mail_failure&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_notification.TestUnwrapProductString.test_send_mail_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_notification.TestUnwrapProductString.test_send_mail_success&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -124,7 +159,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_notification.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,23 +170,8 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_sale_comparator.TestCompareSales.test_no_changes_in_sales&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_notification.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests in test_sale_comparator.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -169,35 +189,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_send_mail.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_send_mail.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
-      <item itemvalue="Python tests.Python tests in test_send_mail.py" />
+      <item itemvalue="Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_failure" />
+      <item itemvalue="Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_success" />
+      <item itemvalue="Python tests.Python tests in test_notification.py" />
       <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
-      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" />
       <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
-        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" />
+        <item itemvalue="Python tests.Python tests in test_notification.py" />
+        <item itemvalue="Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_failure" />
+        <item itemvalue="Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_success" />
         <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
-        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
-        <item itemvalue="Python tests.Python tests in test_send_mail.py" />
+        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
       </list>
     </recent_temporary>
   </component>
@@ -225,34 +230,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00073" summary="unused lists">
-      <option name="closed" value="true" />
-      <created>1742752622865</created>
-      <option name="number" value="LOCAL−00073" />
-      <option name="presentableId" value="LOCAL−00073" />
-      <updated>1742752622865</updated>
-    </task>
-    <task id="LOCAL−00074" summary="moved tests">
-      <option name="closed" value="true" />
-      <created>1742754766353</created>
-      <option name="number" value="LOCAL−00074" />
-      <option name="presentableId" value="LOCAL−00074" />
-      <updated>1742754766353</updated>
-    </task>
-    <task id="LOCAL−00075" summary="specifying what test file to run">
-      <option name="closed" value="true" />
-      <created>1742754959755</created>
-      <option name="number" value="LOCAL−00075" />
-      <option name="presentableId" value="LOCAL−00075" />
-      <updated>1742754959755</updated>
-    </task>
-    <task id="LOCAL−00076" summary="Renaming tests">
-      <option name="closed" value="true" />
-      <created>1742755401005</created>
-      <option name="number" value="LOCAL−00076" />
-      <option name="presentableId" value="LOCAL−00076" />
-      <updated>1742755401007</updated>
     </task>
     <task id="LOCAL−00077" summary="testing ci">
       <option name="closed" value="true" />
@@ -569,7 +546,35 @@
       <option name="presentableId" value="LOCAL−00121" />
       <updated>1743688803978</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL−00122" summary="Asserting calls to send_mail">
+      <option name="closed" value="true" />
+      <created>1743690240217</created>
+      <option name="number" value="LOCAL−00122" />
+      <option name="presentableId" value="LOCAL−00122" />
+      <updated>1743690240219</updated>
+    </task>
+    <task id="LOCAL−00123" summary="Adding test for unwrap product string">
+      <option name="closed" value="true" />
+      <created>1743690449974</created>
+      <option name="number" value="LOCAL−00123" />
+      <option name="presentableId" value="LOCAL−00123" />
+      <updated>1743690449976</updated>
+    </task>
+    <task id="LOCAL−00124" summary="Adding test for send_mail">
+      <option name="closed" value="true" />
+      <created>1743690882522</created>
+      <option name="number" value="LOCAL−00124" />
+      <option name="presentableId" value="LOCAL−00124" />
+      <updated>1743690882522</updated>
+    </task>
+    <task id="LOCAL−00125" summary="Remobing comments">
+      <option name="closed" value="true" />
+      <created>1743690978538</created>
+      <option name="number" value="LOCAL−00125" />
+      <option name="presentableId" value="LOCAL−00125" />
+      <updated>1743690978538</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,10 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adapting the program to run with secrets" />
-    <MESSAGE value="Adding docker compose file" />
-    <MESSAGE value="Creating function to retrieve secrets within docker" />
-    <MESSAGE value="Whitespace" />
     <MESSAGE value="Refactor main loop to retrieve URL secret directly and improve mail notification format" />
     <MESSAGE value="Removing local secrets.py" />
     <MESSAGE value="Adding try/except" />
@@ -624,7 +625,11 @@
     <MESSAGE value="Added test for send_mail" />
     <MESSAGE value="We'll add tests for send_mail later" />
     <MESSAGE value="Formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Formatting" />
+    <MESSAGE value="Asserting calls to send_mail" />
+    <MESSAGE value="Adding test for unwrap product string" />
+    <MESSAGE value="Adding test for send_mail" />
+    <MESSAGE value="Remobing comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remobing comments" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
