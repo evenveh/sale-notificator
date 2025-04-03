@@ -19,7 +19,9 @@ def main_loop(old_guitars, url):
         guitars = get_sales(url)
         new_products, old_products = compare_sales(old_products=old_guitars, new_products=guitars)
         message = create_message(new_products=new_products, old_products=old_products, url=url)
+        send_mail(message)
         old_guitars = guitars
+
         time.sleep(60 * 60 * 3)
         print("Starting new loop")
 
