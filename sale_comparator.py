@@ -1,5 +1,13 @@
 from notification import send_mail, unwrap_product_string
 
+def create_message(new_sales, old_sales, url):
+    if new_sales & old_sales:
+        msg = "There are new sales and old sales. \n\nNew:blabla \n\nold:albalba"
+    if new_sales and not old_sales:
+        msg = "There are new sales. \n\nNew:blabla"
+    if old_sales and not new_sales:
+        msg = "There are old sales. \n\nold:albalba"
+
 
 def compare_sales(old_products, new_products, url):
     if old_products == new_products:
