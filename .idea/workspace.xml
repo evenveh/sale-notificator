@@ -78,7 +78,7 @@
     "Python.webg_scraping.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "update-ci",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/evenv/Documents/CodingProjects/PythonProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -187,9 +187,9 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale" />
+      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" />
       <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
       <item itemvalue="Python tests.Python tests in test_notification.py" />
-      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" />
       <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
     </list>
     <recent_temporary>
