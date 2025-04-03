@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Started creating a function for creating the mail message">
-      <change beforePath="$PROJECT_DIR$/sale_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/sale_comparator.py" afterDir="false" />
-    </list>
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Trying to only build and push docker image if we're at master branch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +78,7 @@
     "Python.webg_scraping.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "message__creater__function",
+    "git-widget-placeholder": "update-ci",
     "last_opened_file_path": "C:/Users/evenv/Documents/CodingProjects/PythonProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -228,13 +226,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00079" summary="testing ci">
-      <option name="closed" value="true" />
-      <created>1742755738393</created>
-      <option name="number" value="LOCAL−00079" />
-      <option name="presentableId" value="LOCAL−00079" />
-      <updated>1742755738393</updated>
     </task>
     <task id="LOCAL−00080" summary="Stripping the tests">
       <option name="closed" value="true" />
@@ -572,7 +563,14 @@
       <option name="presentableId" value="LOCAL−00127" />
       <updated>1743692230807</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL−00128" summary="Trying to only build and push docker image if we're at master branch">
+      <option name="closed" value="true" />
+      <created>1743692482808</created>
+      <option name="number" value="LOCAL−00128" />
+      <option name="presentableId" value="LOCAL−00128" />
+      <updated>1743692482808</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding try/except" />
     <MESSAGE value="Ignoring secret files" />
     <MESSAGE value="Refactor initialization and main loop. &#10;Added print statement for logging" />
     <MESSAGE value="Variable renaming" />
@@ -627,7 +624,8 @@
     <MESSAGE value="Remobing comments" />
     <MESSAGE value="Removing return statement for transparency" />
     <MESSAGE value="Started creating a function for creating the mail message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started creating a function for creating the mail message" />
+    <MESSAGE value="Trying to only build and push docker image if we're at master branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to only build and push docker image if we're at master branch" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
