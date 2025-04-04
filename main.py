@@ -17,11 +17,11 @@ def initialization():
 def main_loop(old_guitars, url):
     while True:
         guitars = get_sales(url)
-        guitars = ["IBANEZ AWTP LIMITED EDITION"]
-        new_products, old_products = compare_sales(old_products=old_guitars, new_products=guitars)
-        message = create_message(new_products=new_products, old_products=old_products, url=url)
+        new_products, old_products = compare_sales(old_products=old_guitars, current_products=guitars)
+        message = create_message(new_products=new_products, old_products=old_products, current_products=guitars, url=url)
         send_mail(message)
         old_guitars = guitars
+        print(guitars)
 
         time.sleep(60 * 60 * 3)
         print("Starting new loop")
