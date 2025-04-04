@@ -21,7 +21,6 @@ def main_loop(old_guitars, url):
         message = create_message(new_products=new_products, old_products=old_products, current_products=guitars, url=url)
         send_mail(message)
         old_guitars = guitars
-        print(guitars)
 
         time.sleep(60 * 60 * 3)
         print("Starting new loop")
