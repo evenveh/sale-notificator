@@ -13,13 +13,13 @@ def create_message(new_products, old_products, current_products, url):
     if new_products and not old_products:
         new_products_string = unwrap_product_string(new_products)
         print("Sending message about new product")
-        msg = f"Subject: New Ibanez guitar at Evenstad Outlet\n\nThere is a new product on Evenstad's outlet page: {new_products_string}. \n There are currently {len(new_products)} guitars out: \n\n{unwrap_product_string(current_products)}\n\n URL: {url}"
+        msg = f"Subject: New Ibanez guitar at Evenstad Outlet\n\nThere is a new product on Evenstad's outlet page: {new_products_string}. \n There are currently {len(current_products)} guitars out: \n\n{unwrap_product_string(current_products)}\n\n URL: {url}"
         send_mail(message=msg)
 
     if old_products and not new_products:
-        old_products_string = unwrap_product_string(new_products)
+        old_products_string = unwrap_product_string(old_products)
         print("Sending message about product no longer for sale")
-        msg = f"Subject: Product no longer for sale at Evenstad's Outlet\n\n The product: {old_products_string} is no longer for sale. \n There are currently {len(new_products)} guitars out: \n\n{unwrap_product_string(current_products)}\n\n URL: {url}"
+        msg = f"Subject: Product no longer for sale at Evenstad's Outlet\n\n The product: {old_products_string} is no longer for sale. \n There are currently {len(current_products)} guitars out: \n\n{unwrap_product_string(current_products)}\n\n URL: {url}"
         send_mail(message=msg)
 
     else:
