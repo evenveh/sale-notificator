@@ -14,13 +14,13 @@ def initialization():
     return initial_sales, url
 
 
-def main_loop(old_guitars, url):
+def main_loop(old_sales, url):
     while True:
-        guitars = get_sales(url)
-        new_products, old_products = compare_sales(old_products=old_guitars, current_products=guitars)
-        message = create_message(new_products=new_products, old_products=old_products, current_products=guitars, url=url)
+        current_sales = get_sales(url)
+        new_products, expired_products = compare_sales(old_products=old_sales, current_products=current_sales)
+        message = create_message(new_products=new_products, old_products=expired_products, current_products=current_sales, url=url)
         send_mail(message)
-        old_guitars = guitars
+        old_sales = current_sales
 
         time.sleep(60 * 60 * 3)
         print("Starting new loop")
