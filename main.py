@@ -1,6 +1,6 @@
 from notification import send_mail, unwrap_product_string
 from sale_finder import get_sales
-from sale_comparator import compare_sales
+from sale_comparator import compare_sales, create_message
 import time
 from get_secrets import get_secret
 
@@ -14,11 +14,14 @@ def initialization():
     return initial_sales, url
 
 
-def main_loop(old_guitars, url):
+def main_loop(old_sales, url):
     while True:
-        guitars = get_sales(url)
-        compare_sales(old_products=old_guitars, new_products=guitars, url=url)
-        old_guitars = guitars
+        current_sales = get_sales(url)
+        new_products, expired_products = compare_sales(old_products=old_sales, current_products=current_sales)
+        message = create_message(new_products=new_products, old_products=expired_products, current_products=current_sales, url=url)
+        send_mail(message)
+        old_sales = current_sales
+
         time.sleep(60 * 60 * 3)
         print("Starting new loop")
 

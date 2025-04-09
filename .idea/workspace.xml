@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Trying to only build and push docker image if we're at master branch" />
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Refactor main loop and tests to use sales terminology for clarity.&#10;Also updating tests for new implementation of compare_sales">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sale_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/sale_comparator.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test-mergeable" />
+        <entry key="$PROJECT_DIR$" value="update-ci" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +57,7 @@
   "keyToString": {
     "Docker.Dockerfile.executor": "Run",
     "Docker.docker-compose.yml.myapp: Compose Deployment.executor": "Run",
+    "Python tests.Python tests for test_notification.TestNotification.test_send_mail_success.executor": "Run",
     "Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_failure.executor": "Run",
     "Python tests.Python tests for test_notification.TestUnwrapProductString.test_send_mail_success.executor": "Run",
     "Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products.executor": "Run",
@@ -110,7 +115,7 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_notification.TestNotification.test_send_mail_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,11 +126,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_sale_comparator.TestCompareSales.test_new_products_on_sale&quot;" />
+      <option name="_new_target" value="&quot;test_notification.TestNotification.test_send_mail_success&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,7 +141,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_sale_comparator.TestCompareSales.test_no_changes_in_sales&quot;" />
+      <option name="_new_target" value="&quot;test_sale_comparator.TestCompareSales.test_both_new_and_expired_products&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -155,7 +160,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_notification.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_sale_comparator.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,39 +171,39 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_notification.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_sale_comparator.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_sale_comparator.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_sale_finder.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_sale_comparator.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_sale_finder.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale" />
+      <item itemvalue="Python tests.Python tests for test_notification.TestNotification.test_send_mail_success" />
+      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
+      <item itemvalue="Python tests.Python tests in test_sale_finder.py" />
       <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
-      <item itemvalue="Python tests.Python tests in test_notification.py" />
-      <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" />
       <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests in test_sale_comparator.py" />
-        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_no_changes_in_sales" />
-        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_new_products_on_sale" />
+        <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_both_new_and_expired_products" />
+        <item itemvalue="Python tests.Python tests in test_sale_finder.py" />
+        <item itemvalue="Python tests.Python tests for test_notification.TestNotification.test_send_mail_success" />
         <item itemvalue="Python tests.Python tests for test_sale_comparator.TestCompareSales.test_products_no_longer_on_sale" />
-        <item itemvalue="Python tests.Python tests in test_notification.py" />
       </list>
     </recent_temporary>
   </component>
@@ -226,69 +231,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00080" summary="Stripping the tests">
-      <option name="closed" value="true" />
-      <created>1742755847885</created>
-      <option name="number" value="LOCAL−00080" />
-      <option name="presentableId" value="LOCAL−00080" />
-      <updated>1742755847886</updated>
-    </task>
-    <task id="LOCAL−00081" summary="testing ci">
-      <option name="closed" value="true" />
-      <created>1742756045276</created>
-      <option name="number" value="LOCAL−00081" />
-      <option name="presentableId" value="LOCAL−00081" />
-      <updated>1742756045276</updated>
-    </task>
-    <task id="LOCAL−00082" summary="testing ci">
-      <option name="closed" value="true" />
-      <created>1742756199493</created>
-      <option name="number" value="LOCAL−00082" />
-      <option name="presentableId" value="LOCAL−00082" />
-      <updated>1742756199493</updated>
-    </task>
-    <task id="LOCAL−00083" summary="testing ci">
-      <option name="closed" value="true" />
-      <created>1742756358398</created>
-      <option name="number" value="LOCAL−00083" />
-      <option name="presentableId" value="LOCAL−00083" />
-      <updated>1742756358398</updated>
-    </task>
-    <task id="LOCAL−00084" summary="testing ci">
-      <option name="closed" value="true" />
-      <created>1742756437168</created>
-      <option name="number" value="LOCAL−00084" />
-      <option name="presentableId" value="LOCAL−00084" />
-      <updated>1742756437168</updated>
-    </task>
-    <task id="LOCAL−00085" summary="Now using environment variables">
-      <option name="closed" value="true" />
-      <created>1742757446595</created>
-      <option name="number" value="LOCAL−00085" />
-      <option name="presentableId" value="LOCAL−00085" />
-      <updated>1742757446595</updated>
-    </task>
-    <task id="LOCAL−00086" summary="Now using environment variables">
-      <option name="closed" value="true" />
-      <created>1742757495726</created>
-      <option name="number" value="LOCAL−00086" />
-      <option name="presentableId" value="LOCAL−00086" />
-      <updated>1742757495726</updated>
-    </task>
-    <task id="LOCAL−00087" summary="Rename">
-      <option name="closed" value="true" />
-      <created>1742834114102</created>
-      <option name="number" value="LOCAL−00087" />
-      <option name="presentableId" value="LOCAL−00087" />
-      <updated>1742834114102</updated>
-    </task>
-    <task id="LOCAL−00088" summary="Sending a mail each time the application is running">
-      <option name="closed" value="true" />
-      <created>1742834588346</created>
-      <option name="number" value="LOCAL−00088" />
-      <option name="presentableId" value="LOCAL−00088" />
-      <updated>1742834588346</updated>
     </task>
     <task id="LOCAL−00089" summary="Unused imports">
       <option name="closed" value="true" />
@@ -570,7 +512,70 @@
       <option name="presentableId" value="LOCAL−00128" />
       <updated>1743692482808</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL−00129" summary="Creating create_message function">
+      <option name="closed" value="true" />
+      <created>1743693898770</created>
+      <option name="number" value="LOCAL−00129" />
+      <option name="presentableId" value="LOCAL−00129" />
+      <updated>1743693898770</updated>
+    </task>
+    <task id="LOCAL−00130" summary="removing url">
+      <option name="closed" value="true" />
+      <created>1743694031571</created>
+      <option name="number" value="LOCAL−00130" />
+      <option name="presentableId" value="LOCAL−00130" />
+      <updated>1743694031571</updated>
+    </task>
+    <task id="LOCAL−00131" summary="temporary change in tests">
+      <option name="closed" value="true" />
+      <created>1743694227656</created>
+      <option name="number" value="LOCAL−00131" />
+      <option name="presentableId" value="LOCAL−00131" />
+      <updated>1743694227656</updated>
+    </task>
+    <task id="LOCAL−00132" summary="Refactor create_message function to improve message formatting and handling of product updates">
+      <option name="closed" value="true" />
+      <created>1743697145177</created>
+      <option name="number" value="LOCAL−00132" />
+      <option name="presentableId" value="LOCAL−00132" />
+      <updated>1743697145177</updated>
+    </task>
+    <task id="LOCAL−00133" summary="Refactor message creation and sending logic in create_message function">
+      <option name="closed" value="true" />
+      <created>1743697282175</created>
+      <option name="number" value="LOCAL−00133" />
+      <option name="presentableId" value="LOCAL−00133" />
+      <updated>1743697282175</updated>
+    </task>
+    <task id="LOCAL−00134" summary="Sending just one mail if there are several changes">
+      <option name="closed" value="true" />
+      <created>1743770550298</created>
+      <option name="number" value="LOCAL−00134" />
+      <option name="presentableId" value="LOCAL−00134" />
+      <updated>1743770550298</updated>
+    </task>
+    <task id="LOCAL−00135" summary="Removed print">
+      <option name="closed" value="true" />
+      <created>1743770598193</created>
+      <option name="number" value="LOCAL−00135" />
+      <option name="presentableId" value="LOCAL−00135" />
+      <updated>1743770598193</updated>
+    </task>
+    <task id="LOCAL−00136" summary="Tests need to be made later">
+      <option name="closed" value="true" />
+      <created>1743770635168</created>
+      <option name="number" value="LOCAL−00136" />
+      <option name="presentableId" value="LOCAL−00136" />
+      <updated>1743770635168</updated>
+    </task>
+    <task id="LOCAL−00137" summary="Refactor main loop and tests to use sales terminology for clarity.&#10;Also updating tests for new implementation of compare_sales">
+      <option name="closed" value="true" />
+      <created>1744187496718</created>
+      <option name="number" value="LOCAL−00137" />
+      <option name="presentableId" value="LOCAL−00137" />
+      <updated>1744187496718</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,15 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ignoring secret files" />
-    <MESSAGE value="Refactor initialization and main loop. &#10;Added print statement for logging" />
-    <MESSAGE value="Variable renaming" />
-    <MESSAGE value="Added print statements for logging" />
-    <MESSAGE value="test - reversed" />
-    <MESSAGE value="Changing image name to match repo" />
-    <MESSAGE value="Temporarily renamin docker ci yyml and integrating with ci" />
-    <MESSAGE value="Temporarily renamin docker ci yml and integrating with ci" />
-    <MESSAGE value="Rename" />
     <MESSAGE value="Removed unecesary file" />
     <MESSAGE value="test mergeable" />
     <MESSAGE value="test" />
@@ -625,7 +621,16 @@
     <MESSAGE value="Removing return statement for transparency" />
     <MESSAGE value="Started creating a function for creating the mail message" />
     <MESSAGE value="Trying to only build and push docker image if we're at master branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to only build and push docker image if we're at master branch" />
+    <MESSAGE value="Creating create_message function" />
+    <MESSAGE value="removing url" />
+    <MESSAGE value="temporary change in tests" />
+    <MESSAGE value="Refactor create_message function to improve message formatting and handling of product updates" />
+    <MESSAGE value="Refactor message creation and sending logic in create_message function" />
+    <MESSAGE value="Sending just one mail if there are several changes" />
+    <MESSAGE value="Removed print" />
+    <MESSAGE value="Tests need to be made later" />
+    <MESSAGE value="Refactor main loop and tests to use sales terminology for clarity.&#10;Also updating tests for new implementation of compare_sales" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor main loop and tests to use sales terminology for clarity.&#10;Also updating tests for new implementation of compare_sales" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
