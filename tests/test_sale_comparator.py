@@ -6,14 +6,14 @@ class TestCompareSales(unittest.TestCase):
 
     @patch('sale_comparator.send_mail')
     @patch('sale_comparator.unwrap_product_string')
-    def test_create_message_with_new_and_expired_products(self, mock_unwrap, mock_send_mail):
+    def test_create_message_with_new_and_expired_sales(self, mock_unwrap, mock_send_mail):
         mock_unwrap.side_effect = lambda products: '\n'.join(products)
-        new_products = ['Product A']
-        old_products = ['Product B']
+        new_sales = ['Product A']
+        expired_sales = ['Product B']
         current_products = ['Product A', 'Product B']
         url = "https://example.com"
 
-        create_message(new_products, old_products, current_products, url)
+        create_message(new_sales, expired_sales, current_products, url)
 
         expected_message = (
             "Subject: Update on sales\n\n There are both new and expired products.\n\n"
@@ -23,14 +23,14 @@ class TestCompareSales(unittest.TestCase):
 
     @patch('sale_comparator.send_mail')
     @patch('sale_comparator.unwrap_product_string')
-    def test_create_message_with_only_new_products(self, mock_unwrap, mock_send_mail):
+    def test_create_message_with_only_new_sales(self, mock_unwrap, mock_send_mail):
         mock_unwrap.side_effect = lambda products: '\n'.join(products)
-        new_products = ['Product A']
-        old_products = []
-        current_products = ['Product A', 'Product C']
+        new_sales = ['Product A']
+        expired_sales = []
+        current_sales = ['Product A', 'Product C']
         url = "https://example.com"
 
-        create_message(new_products, old_products, current_products, url)
+        create_message(new_sales, expired_sales, current_sales, url)
 
         expected_message = (
             "Subject: New Ibanez guitar at Evenstad Outlet\n\n"
@@ -42,14 +42,14 @@ class TestCompareSales(unittest.TestCase):
 
     @patch('sale_comparator.send_mail')
     @patch('sale_comparator.unwrap_product_string')
-    def test_message_with_only_expired_products(self, mock_unwrap, mock_send_mail):
+    def test_create_message_with_only_expired_sales(self, mock_unwrap, mock_send_mail):
         mock_unwrap.side_effect = lambda products: '\n'.join(products)
-        new_products = []
-        old_products = ['Product B']
+        new_sales = []
+        expired_sales = ['Product B']
         current_products = ['Product A']
         url = "https://example.com"
 
-        create_message(new_products, old_products, current_products, url)
+        create_message(new_sales, expired_sales, current_products, url)
 
         expected_message = (
             "Subject: Product no longer for sale at Evenstad's Outlet\n\n"
@@ -60,13 +60,13 @@ class TestCompareSales(unittest.TestCase):
 
     @patch('sale_comparator.send_mail')
     @patch('sale_comparator.unwrap_product_string')
-    def test_message_with_no_changes(self, mock_unwrap, mock_send_mail):
-        new_products = []
-        old_products = []
-        current_products = ['Product A']
+    def test_create_message_with_no_changes(self, mock_unwrap, mock_send_mail):
+        new_sales = []
+        expired_sales = []
+        current_sales = ['Product A']
         url = "https://example.com"
 
-        create_message(new_products, old_products, current_products, url)
+        create_message(new_sales, expired_sales, current_sales, url)
 
         mock_send_mail.assert_not_called()
 
