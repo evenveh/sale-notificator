@@ -17,8 +17,8 @@ def initialization():
 def main_loop(old_sales, url):
     while True:
         current_sales = get_sales(url)
-        new_products, expired_products = compare_sales(old_products=old_sales, current_products=current_sales)
-        message = create_message(new_products=new_products, old_products=expired_products, current_products=current_sales, url=url)
+        new_sales, expired_sales = compare_sales(old_products=old_sales, current_products=current_sales)
+        message = create_message(new_products=new_sales, old_products=expired_sales, current_products=current_sales, url=url)
         send_mail(message)
         old_sales = current_sales
 
