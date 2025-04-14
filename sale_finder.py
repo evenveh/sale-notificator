@@ -18,7 +18,7 @@ def get_sales(url):
 
         driver.get(url)
         time.sleep(2)
-        products = []
+        product_list = []
         product_class_name = "WebPubElement.pub-productlisting"
         products = driver.find_elements(By.CLASS_NAME, product_class_name)
 
@@ -31,9 +31,9 @@ def get_sales(url):
                 sale = sale_tag.text.strip() if sale_tag else "No discount"
 
                 print(f"{name}: {sale}")
-                products.append(f"{name}: {sale}")
+                product_list.append(f"{name}: {sale}")
 
             except Exception as e:
                 print(f"Error: {e}")
 
-    return products
+    return product_list
