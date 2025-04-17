@@ -6,8 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 
-def get_sales(url):
-
+def find_new_products(url):
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")

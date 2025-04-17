@@ -1,14 +1,12 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from sale_finder import get_sales
+from sale_finder import find_new_products
 
 
 class TestGetSales(unittest.TestCase):
 
     @patch("sale_finder.webdriver.Chrome")
     def test_get_sales(self, mock_webdriver):
-        """Test get_sales function with mocked Selenium"""
-
         mock_driver = MagicMock()
         mock_webdriver.return_value.__enter__.return_value = mock_driver
 
@@ -22,7 +20,7 @@ class TestGetSales(unittest.TestCase):
         ]
 
         url = "https://www.example.com"
-        result = get_sales(url)
+        result = find_new_products(url)
 
         self.assertIsInstance(result, list)
         self.assertGreater(len(result), 0)
