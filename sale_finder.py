@@ -19,14 +19,16 @@ def find_new_products(url):
         time.sleep(2)
         product_list = []
         product_class_name = "WebPubElement.pub-productlisting"
+        product_name_tag = "AddHeader1"
+        product_sale_tag = "YouSavePercentLabel"
         products = driver.find_elements(By.CLASS_NAME, product_class_name)
 
         for product in products:
             try:
-                name_tag = product.find_element(By.CLASS_NAME, "AddHeader1")
+                name_tag = product.find_element(By.CLASS_NAME, product_name_tag)
                 name = name_tag.text.strip() if name_tag else "Unknown Guitar"
 
-                sale_tag = product.find_element(By.CLASS_NAME, "YouSavePercentLabel")
+                sale_tag = product.find_element(By.CLASS_NAME, product_sale_tag)
                 sale = sale_tag.text.strip() if sale_tag else "No discount"
 
                 print(f"{name}: {sale}")

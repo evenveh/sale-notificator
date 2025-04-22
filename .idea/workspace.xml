@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Bug fix">
-      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="dae6f862-24c6-4008-b550-f61324f69d24" name="Changes" comment="Removing mergeable for now" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,27 +241,6 @@
       <workItem from="1741938168685" duration="1429000" />
       <workItem from="1742112881659" duration="28000" />
       <workItem from="1742217809254" duration="3751000" />
-    </task>
-    <task id="LOCAL−00099" summary="Refactor initialization and main loop. &#10;Added print statement for logging">
-      <option name="closed" value="true" />
-      <created>1743170501160</created>
-      <option name="number" value="LOCAL−00099" />
-      <option name="presentableId" value="LOCAL−00099" />
-      <updated>1743170501161</updated>
-    </task>
-    <task id="LOCAL−00100" summary="Variable renaming">
-      <option name="closed" value="true" />
-      <created>1743170643667</created>
-      <option name="number" value="LOCAL−00100" />
-      <option name="presentableId" value="LOCAL−00100" />
-      <updated>1743170643667</updated>
-    </task>
-    <task id="LOCAL−00101" summary="Added print statements for logging">
-      <option name="closed" value="true" />
-      <created>1743170682731</created>
-      <option name="number" value="LOCAL−00101" />
-      <option name="presentableId" value="LOCAL−00101" />
-      <updated>1743170682731</updated>
     </task>
     <task id="LOCAL−00102" summary="test">
       <option name="closed" value="true" />
@@ -589,7 +564,28 @@
       <option name="presentableId" value="LOCAL−00147" />
       <updated>1744618010219</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL−00148" summary="Renamed sale finder function">
+      <option name="closed" value="true" />
+      <created>1744875527720</created>
+      <option name="number" value="LOCAL−00148" />
+      <option name="presentableId" value="LOCAL−00148" />
+      <updated>1744875527721</updated>
+    </task>
+    <task id="LOCAL−00149" summary="Renamed sale finder function">
+      <option name="closed" value="true" />
+      <created>1744875542319</created>
+      <option name="number" value="LOCAL−00149" />
+      <option name="presentableId" value="LOCAL−00149" />
+      <updated>1744875542319</updated>
+    </task>
+    <task id="LOCAL−00150" summary="Removing mergeable for now">
+      <option name="closed" value="true" />
+      <created>1744875594242</created>
+      <option name="number" value="LOCAL−00150" />
+      <option name="presentableId" value="LOCAL−00150" />
+      <updated>1744875594242</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,8 +615,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added test for send_mail" />
-    <MESSAGE value="We'll add tests for send_mail later" />
     <MESSAGE value="Asserting calls to send_mail" />
     <MESSAGE value="Adding test for unwrap product string" />
     <MESSAGE value="Adding test for send_mail" />
@@ -644,7 +638,9 @@
     <MESSAGE value="Cleaning" />
     <MESSAGE value="Formatting" />
     <MESSAGE value="Bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix" />
+    <MESSAGE value="Renamed sale finder function" />
+    <MESSAGE value="Removing mergeable for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing mergeable for now" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$Sale_Finder.coverage" NAME="Sale_Finder Coverage Results" MODIFIED="1741774822037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
