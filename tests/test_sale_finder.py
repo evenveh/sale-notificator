@@ -22,9 +22,10 @@ class TestGetSales(unittest.TestCase):
         url = "https://www.example.com"
         result = find_new_products(url)
 
-        self.assertIsInstance(result, list)
+        self.assertIsInstance(result, dict)
         self.assertGreater(len(result), 0)
-        self.assertIn("Gibson Les Paul: 20% off", result)
+        self.assertIn("Gibson Les Paul", result)
+        self.assertEqual(result["Gibson Les Paul"], "20% off")
 
 
 if __name__ == "__main__":

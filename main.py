@@ -8,6 +8,7 @@ from get_secrets import get_secret
 def initialization():
     url = get_secret("URL_IBANEZ_GUITARS_AND_BASS")
     initial_sales = find_new_products(url)
+    ##TODO: find_new_products og tilhørende test returnerer en dict, men resten er ikke endret.
     products_string = unwrap_product_string(initial_sales)
     send_mail(message=f"Subject: Sale Notificator\n\nSale notificator is up and running!\n\n "
                       f"There are currently {len(initial_sales)} guitars out: \n\n{products_string}\n\n URL: {url}")

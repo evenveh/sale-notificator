@@ -18,6 +18,7 @@ def find_new_products(url):
         driver.get(url)
         time.sleep(2)
         product_list = []
+        product_dict = {}
         product_class_name = "WebPubElement.pub-productlisting"
         product_name_tag = "AddHeader1"
         product_sale_tag = "YouSavePercentLabel"
@@ -32,9 +33,9 @@ def find_new_products(url):
                 sale = sale_tag.text.strip() if sale_tag else "No discount"
 
                 print(f"{name}: {sale}")
-                product_list.append(f"{name}: {sale}")
+                product_dict[name] = sale
 
             except Exception as e:
                 print(f"Error: {e}")
 
-    return product_list
+    return product_dict
