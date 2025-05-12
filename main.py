@@ -6,7 +6,7 @@ from get_secrets import get_secret
 
 
 def initialization(page_scraper):
-    url = get_secret("URL_IBANEZ_GUITARS_AND_BASS")
+    url = get_secret("URL_IBANEZ_GUITARS_AND_BASS").strip().encode('latin1').decode('utf-8')
     initial_sales = page_scraper.find_products_on_page(url)
     products_string = unwrap_product_string(initial_sales)
     send_mail(message=f"Subject: Sale Notificator\n\nSale notificator is up and running!\n\n "
