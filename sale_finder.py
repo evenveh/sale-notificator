@@ -6,6 +6,42 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 
+class PageScraper:
+    def __init__(self):
+        self.chrome_options = Options()
+        self.chrome_options.add_argument("--headless")
+        self.chrome_options.add_argument("--disable-gpu")
+        self.chrome_options.add_argument("--no-sandbox")
+        self.service = Service(ChromeDriverManager().install())
+
+    def find_products_on_page(self,url):
+
+        with webdriver.Chrome(service=self.service, options=self.chrome_options) as driver:
+            product_class_name = "WebPubElement.pub-productlisting"
+            product_name_tag = "AddHeader1"
+            product_sale_tag = "YouSavePercentLabel"
+            product_list = []
+            driver.get(url)
+            time.sleep(2)
+            products = driver.find_elements(By.CLASS_NAME, product_class_name)
+
+            for product in products:
+                try:
+                    name_tag = product.find_element(By.CLASS_NAME, product_name_tag)
+                    name = name_tag.text.strip() if name_tag else "Unknown Guitar"
+
+                    sale_tag = product.find_element(By.CLASS_NAME, product_sale_tag)
+                    sale = sale_tag.text.strip() if sale_tag else "No discount"
+
+                    print(f"{name}: {sale}")
+                    product_list.append(f"{name}: {sale}")
+
+                except Exception as e:
+                    print(f"Error: {e}")
+
+        return product_list
+
+
 def find_new_products(url):
     chrome_options = Options()
     chrome_options.add_argument("--headless")
