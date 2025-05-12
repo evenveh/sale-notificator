@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from sale_finder import find_new_products
+from sale_finder import PageScraper
 
 
 class TestGetSales(unittest.TestCase):
@@ -19,8 +19,10 @@ class TestGetSales(unittest.TestCase):
             )
         ]
 
+
         url = "https://www.example.com"
-        result = find_new_products(url)
+        page_scraper = PageScraper()
+        result = page_scraper.find_products_on_page(url)
 
         self.assertIsInstance(result, list)
         self.assertGreater(len(result), 0)
