@@ -40,37 +40,3 @@ class PageScraper:
                     print(f"Error: {e}")
 
         return product_list
-
-
-def find_new_products(url):
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    service = Service(ChromeDriverManager().install())
-
-    with webdriver.Chrome(service=service, options=chrome_options) as driver:
-
-        driver.get(url)
-        time.sleep(2)
-        product_list = []
-        product_class_name = "WebPubElement.pub-productlisting"
-        product_name_tag = "AddHeader1"
-        product_sale_tag = "YouSavePercentLabel"
-        products = driver.find_elements(By.CLASS_NAME, product_class_name)
-
-        for product in products:
-            try:
-                name_tag = product.find_element(By.CLASS_NAME, product_name_tag)
-                name = name_tag.text.strip() if name_tag else "Unknown Guitar"
-
-                sale_tag = product.find_element(By.CLASS_NAME, product_sale_tag)
-                sale = sale_tag.text.strip() if sale_tag else "No discount"
-
-                print(f"{name}: {sale}")
-                product_list.append(f"{name}: {sale}")
-
-            except Exception as e:
-                print(f"Error: {e}")
-
-    return product_list
