@@ -24,6 +24,7 @@ class PageScraper:
         with webdriver.Chrome(service=self.service, options=self.chrome_options) as driver:
 
             product_list = []
+            product_dict = {}
             driver.get(url)
             time.sleep(2)
             products = driver.find_elements(By.CLASS_NAME, product_class_name)
@@ -38,6 +39,7 @@ class PageScraper:
 
                     print(f"{name}: {sale}")
                     product_list.append(f"{name}: {sale}")
+                    product_dict[name] = sale
 
                 except Exception as e:
                     print(f"Error: {e}")
@@ -46,7 +48,7 @@ class PageScraper:
 
     def fetch_item_price(self,
                          url,
-                         price_tag = '[data-testid="selling-price"]'):
+                         price_tag='[data-testid="selling-price"]'):
 
         with webdriver.Chrome(service=self.service, options=self.chrome_options) as driver:
 
