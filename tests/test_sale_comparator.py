@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from sale_comparator import compare_sales, create_message
+from sale_comparator import compare_products_on_page, create_message
 
 
 class TestCompareSales(unittest.TestCase):
@@ -75,7 +75,7 @@ class TestCompareSales(unittest.TestCase):
         old_sales = ['Product A', 'Product B']
         current_sales = ['Product A', 'Product B']
 
-        new_products, expired_products = compare_sales(old_products=old_sales, current_products=current_sales)
+        new_products, expired_products = compare_products_on_page(old_products=old_sales, current_products=current_sales)
         self.assertEqual(new_products, [])
         self.assertEqual(expired_products, [])
 
@@ -83,7 +83,7 @@ class TestCompareSales(unittest.TestCase):
     def test_new_products_on_sale(self, mock_unwrap):
         old_sales = ['Product A']
         current_sales = ['Product A', 'Product B']
-        new_products, expired_products = compare_sales(old_products=old_sales, current_products=current_sales)
+        new_products, expired_products = compare_products_on_page(old_products=old_sales, current_products=current_sales)
         self.assertEqual(new_products, ['Product B'])
         self.assertEqual(expired_products, [])
 
@@ -91,7 +91,7 @@ class TestCompareSales(unittest.TestCase):
     def test_products_no_longer_on_sale(self, mock_unwrap):
         old_sales = ['Product A', 'Product B']
         current_sales = ['Product A']
-        new_products, expired_products = compare_sales(old_products=old_sales, current_products=current_sales)
+        new_products, expired_products = compare_products_on_page(old_products=old_sales, current_products=current_sales)
         self.assertEqual(new_products, [])
         self.assertEqual(expired_products, ['Product B'])
 
@@ -99,7 +99,7 @@ class TestCompareSales(unittest.TestCase):
     def test_both_new_and_expired_products(self, mock_unwrap):
         old_sales = ['Product A']
         current_sales = ['Product B']
-        new_products, expired_products = compare_sales(old_products=old_sales, current_products=current_sales)
+        new_products, expired_products = compare_products_on_page(old_products=old_sales, current_products=current_sales)
         self.assertEqual(new_products, ['Product B'])
         self.assertEqual(expired_products, ['Product A'])
 

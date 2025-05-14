@@ -25,7 +25,7 @@ def create_message(new_sales, expired_sales, current_sales, url):
         return
 
 
-def compare_sales(old_products, current_products):
+def compare_products_on_page(old_products, current_products):
     new_products_list = []
     old_products_list = []
     if old_products == current_products:

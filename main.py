@@ -1,6 +1,6 @@
 from notification import send_mail, unwrap_product_string
 from sale_finder import PageScraper
-from sale_comparator import compare_sales, create_message
+from sale_comparator import compare_products_on_page, create_message
 import time
 from get_secrets import get_secret
 
@@ -17,8 +17,8 @@ def initialization(page_scraper, url):
 def main_loop(old_sales, url, page_scraper):
     while True:
         current_products_on_outlet = page_scraper.find_products_on_page(url)
-        new_products_on_outlet, expired_products_on_outlet = compare_sales(old_products=old_sales,
-                                                                           current_products=current_products_on_outlet)
+        new_products_on_outlet, expired_products_on_outlet = compare_products_on_page(old_products=old_sales,
+                                                                                      current_products=current_products_on_outlet)
         message = create_message(new_sales=new_products_on_outlet,
                                  expired_sales=expired_products_on_outlet,
                                  current_sales=current_products_on_outlet,
