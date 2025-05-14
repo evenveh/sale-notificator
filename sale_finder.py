@@ -43,3 +43,22 @@ class PageScraper:
                     print(f"Error: {e}")
 
         return product_list
+
+    def fetch_item_price(self, url):
+
+        with webdriver.Chrome(service=self.service, options=self.chrome_options) as driver:
+
+            driver.get(url)
+            time.sleep(2)
+
+            try:
+                price_element = driver.find_element(By.CSS_SELECTOR, '[data-testid="selling-price"]')
+                price_text = price_element.get_attribute("textContent").split("pr")[0].strip()
+
+                print("price:", price_text)
+                print(price_element)
+
+            except Exception as e:
+                print(f"Error: {e}")
+
+        return price_element
