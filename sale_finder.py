@@ -14,12 +14,15 @@ class PageScraper:
         self.chrome_options.add_argument("--no-sandbox")
         self.service = Service(ChromeDriverManager().install())
 
-    def find_products_on_page(self,url):
+    def find_products_on_page(self,
+                              url,
+                              product_class_name="WebPubElement.pub-productlisting",
+                              product_name_tag="AddHeader1",
+                              product_sale_tag="YouSavePercentLabel"
+                              ):
 
         with webdriver.Chrome(service=self.service, options=self.chrome_options) as driver:
-            product_class_name = "WebPubElement.pub-productlisting"
-            product_name_tag = "AddHeader1"
-            product_sale_tag = "YouSavePercentLabel"
+
             product_list = []
             driver.get(url)
             time.sleep(2)
