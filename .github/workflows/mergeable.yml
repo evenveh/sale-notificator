@@ -1,9 +1,0 @@
-#version: 2
-#mergeable:
-#  - when: pull_request.*
-#    validate:
-#      - do: title
-#        name: "Check PR Title Format"
-#        must_include:
-#          regex: "^(feat|fix|chore|docs|refactor|test|ci|build): .+"
-#        message: "PR title must follow the conventional commits format (e.g., 'feat: add new feature')."
