@@ -44,7 +44,9 @@ class PageScraper:
 
         return product_list
 
-    def fetch_item_price(self, url):
+    def fetch_item_price(self,
+                         url,
+                         price_tag = '[data-testid="selling-price"]'):
 
         with webdriver.Chrome(service=self.service, options=self.chrome_options) as driver:
 
@@ -52,7 +54,7 @@ class PageScraper:
             time.sleep(2)
 
             try:
-                price_element = driver.find_element(By.CSS_SELECTOR, '[data-testid="selling-price"]')
+                price_element = driver.find_element(By.CSS_SELECTOR, price_tag)
                 price_text = price_element.get_attribute("textContent").split("pr")[0].strip()
 
                 print("price:", price_text)
