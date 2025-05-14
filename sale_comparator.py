@@ -2,7 +2,6 @@ from notification import unwrap_product_string, send_mail
 
 
 def create_message(new_sales, expired_sales, current_sales, url):
-
     if new_sales and expired_sales:
         new_products_string = unwrap_product_string(new_sales)
         old_products_string = unwrap_product_string(expired_sales)
@@ -41,3 +40,13 @@ def compare_sales(old_products, current_products):
                 old_products_list.append(product)
 
     return new_products_list, old_products_list
+
+
+def compare_prices(old_price, current_price):
+    difference = old_price - current_price
+    if difference > 0:
+        print(f"Price has decreased by {difference} kr.")
+    elif difference < 0:
+        print(f"Price has increased by {abs(difference)} kr.")
+    else:
+        print("No change in the price.")
