@@ -46,6 +46,7 @@ class PageScraper:
 
         return product_list
 
+##TODO: Make url a list and find the price for every element in that list.
     def fetch_item_price(self,
                          url,
                          price_tag='[data-testid="selling-price"]'):

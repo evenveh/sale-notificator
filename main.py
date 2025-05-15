@@ -5,16 +5,17 @@ import time
 from get_secrets import get_secret
 
 
-def initialize_outlet_page_scraper(url):
+def initialize_outlet_page_scraper(url, page_scraper):
     return page_scraper.find_products_on_page(url)
 
 
-def initialize_price_scraper(url):
+def initialize_price_scraper(url, page_scraper):
     return page_scraper.fetch_item_price(url)
 
 
 def initialization(page_scraper, url):
     initial_products_on_outlet = page_scraper.find_products_on_page(url)
+    intitial_ammunition_price = page_scraper.fetch_item_price()
     products_string = unwrap_product_string(initial_products_on_outlet)
     send_mail(message=f"Subject: Sale Notificator\n\nSale notificator is up and running!\n\n "
                       f"There are currently {len(initial_products_on_outlet)} guitars out: "
@@ -24,6 +25,7 @@ def initialization(page_scraper, url):
 
 def main_loop(old_sales, url, page_scraper):
     while True:
+#____________________________________Evenstad scapring____________________________________
         current_products_on_outlet = page_scraper.find_products_on_page(url)
         new_products_on_outlet, expired_products_on_outlet = compare_products_on_page(old_products=old_sales,
                                                                                       current_products=current_products_on_outlet)
@@ -33,9 +35,15 @@ def main_loop(old_sales, url, page_scraper):
                                  url=url)
         send_mail(message)
         old_sales = current_products_on_outlet
+#____________________________________Evenstad scapring____________________________________
+        ammunition_price = page_scraper.fetch_item_price()
 
         time.sleep(60 * 60 * 3)
         print("Starting new loop")
+
+
+
+
 
 
 if __name__ == "__main__":
