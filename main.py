@@ -1,53 +1,64 @@
+import time
 from notification import send_mail, unwrap_product_string
 from sale_finder import PageScraper
 from sale_comparator import compare_products_on_page, create_message
-import time
 from get_secrets import get_secret
 
 
-def initialize_outlet_page_scraper(url, page_scraper):
-    return page_scraper.find_products_on_page(url)
+def initialization(scraper, url):
+    """
+    Initialize by scraping current products and ammunition price,
+    then sending a startup notification email.
+    """
+    products = scraper.find_products_on_page(url)
+    ammunition_price = scraper.fetch_item_price("https://www.xxl.no/fiocchi-fiocchi-9mm-115-grs-fmj-ammunisjon/p/9000961_2_Style")
+
+    products_string = unwrap_product_string(products)
+    message = (
+        f"Subject: Sale Notificator\n\n"
+        f"Sale notificator is up and running!\n\n"
+        f"Test: There are currently {len(products)} guitars out:\n\n"
+        f"{products_string}\n\n"
+        f"URL: {url}\n\n"
+        f"Ammunition price is: {ammunition_price} kr."
+    )
+    send_mail(message)
+    return products, ammunition_price
 
 
-def initialize_price_scraper(url, page_scraper):
-    return page_scraper.fetch_item_price(url)
-
-
-def initialization(page_scraper, url):
-    initial_products_on_outlet = page_scraper.find_products_on_page(url)
-    intitial_ammunition_price = page_scraper.fetch_item_price()
-    products_string = unwrap_product_string(initial_products_on_outlet)
-    send_mail(message=f"Subject: Sale Notificator\n\nSale notificator is up and running!\n\n "
-                      f"There are currently {len(initial_products_on_outlet)} guitars out: "
-                      f"\n\n{products_string}\n\n URL: {url}")
-    return initial_products_on_outlet
-
-
-def main_loop(old_sales, url, page_scraper):
+def main_loop(previous_sales, url, scraper):
+    """
+    Continuously check for updates in sales and send notification emails.
+    """
     while True:
-#____________________________________Evenstad scapring____________________________________
-        current_products_on_outlet = page_scraper.find_products_on_page(url)
-        new_products_on_outlet, expired_products_on_outlet = compare_products_on_page(old_products=old_sales,
-                                                                                      current_products=current_products_on_outlet)
-        message = create_message(new_sales=new_products_on_outlet,
-                                 expired_sales=expired_products_on_outlet,
-                                 current_sales=current_products_on_outlet,
-                                 url=url)
+        # Scrape current product data
+        current_sales = scraper.find_products_on_page(url)
+        new_sales, expired_sales = compare_products_on_page(
+            old_products=previous_sales,
+            current_products=current_sales
+        )
+
+        # Compose and send email with updates
+        message = create_message(
+            new_sales=new_sales,
+            expired_sales=expired_sales,
+            current_sales=current_sales,
+            url=url
+        )
         send_mail(message)
-        old_sales = current_products_on_outlet
-#____________________________________Evenstad scapring____________________________________
-        ammunition_price = page_scraper.fetch_item_price()
 
-        time.sleep(60 * 60 * 3)
+        # Update previous sales for the next iteration
+        previous_sales = current_sales
+
+        # Fetch and (optionally) log current ammunition price
+        ammunition_price = scraper.fetch_item_price()
+
         print("Starting new loop")
-
-
-
-
+        time.sleep(60 * 60 * 3)  # Sleep for 3 hours
 
 
 if __name__ == "__main__":
     url = get_secret("URL_IBANEZ_GUITARS_AND_BASS")
-    page_scraper = PageScraper()
-    initial_sales = initialization(page_scraper, url)
-    main_loop(initial_sales, url, page_scraper)
+    scraper = PageScraper()
+    initial_sales, _ = initialization(scraper, url)
+    main_loop(initial_sales, url, scraper)
