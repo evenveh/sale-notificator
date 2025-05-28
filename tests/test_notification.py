@@ -18,13 +18,12 @@ class TestNotification(unittest.TestCase):
         mock_get_secret.side_effect = lambda x: {
             "FROM_EMAIL": "from@example.com",
             "PASSWORD": "password",
-            "RECIPIENT": "to@example.com"
         }[x]
 
         mock_smtp_instance = MagicMock()
         mock_smtp.return_value.__enter__.return_value = mock_smtp_instance
 
-        send_mail("Test message")
+        send_mail("Test message", "to@example.com")
 
         mock_smtp_instance.starttls.assert_called_once()
         mock_smtp_instance.login.assert_called_once_with(user="from@example.com", password="password")
