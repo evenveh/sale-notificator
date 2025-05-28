@@ -1,4 +1,4 @@
-from notification import send_mail, craft_message_for_updated_prices, sort_recipients_and_subscriptions
+from notification import send_mail, craft_message_for_updated_prices, find_all_subscribers
 from sale_finder import PageScraper
 import time
 from configuration_file import price_dict
@@ -14,15 +14,18 @@ def update_all_prices():
     return price_dict
 
 
+def send_mail_to_subscibers(subscribers, price_dict):
+    for subscriber in subscribers:
+        message = craft_message_for_updated_prices(price_dict, subscriber)
+        send_mail(message, subscriber)
+        time.sleep(10)
+
+
 def main_loop():
     while True:
         price_dict = update_all_prices()
-        subscribers = sort_recipients_and_subscriptions(price_dict)
-
-        for subscriber in subscribers:
-            message = craft_message_for_updated_prices(price_dict, subscriber)
-            send_mail(message, subscriber)
-            time.sleep(10)
+        subscribers = find_all_subscribers(price_dict)
+        send_mail_to_subscibers(subscribers)
 
         time.sleep(60 * 60 * 24)
 
