@@ -8,7 +8,7 @@ def unwrap_product_string(products):
 
 
 def craft_message_for_updated_prices(price_dict):
-    price_lines = [f"{key.replace(' ', '_')}: {value['price']}" for key, value in price_dict.items()]
+    price_lines = [f"{key}: {value['price']}" for key, value in price_dict.items()]
 
     msg = "Subject: Price update\n\nHere are the prices:\n\n" + "\n".join(price_lines)
 
