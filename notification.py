@@ -9,7 +9,7 @@ def unwrap_product_string(products):
 
 def sort_recipients_and_subscriptions(price_dict):
     """ Sorts and returns a list of unique subscribers from the price dictionary.
-    :param price_dict: A dictionary containing products and related information, including subscribers.
+    :param price_dict: A dictionary containing products and related product information, including subscribers.
     :return: a list of unique subscribers from the price_dict
     """
     subscribers = []
