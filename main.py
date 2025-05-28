@@ -5,14 +5,6 @@ import time
 from get_secrets import get_secret
 
 
-def initialize_outlet_page_scraper(url):
-    return page_scraper.find_products_on_page(url)
-
-
-def initialize_price_scraper(url):
-    return page_scraper.fetch_item_price(url)
-
-
 def initialization(page_scraper, url):
     initial_products_on_outlet = page_scraper.find_products_on_page(url)
     products_string = unwrap_product_string(initial_products_on_outlet)
