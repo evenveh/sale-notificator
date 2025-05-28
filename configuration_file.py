@@ -2,7 +2,7 @@
 # The configuration file includes a dictionary of products. Each product has a sub-dictionary with information:
 # 1. URL - The URL of the product page
 # 2. price_tag - The CSS selector to find the price on the product page
-# 3. price - The current price of the product, initialized to 1.0
+# 3. price - The current price of the product, initialized to 1.0, will be a dynamic value fetched from the website.
 
 price_dict = {"Fiocchi 9mm 115 grs": {
     "url": "https://www.xxl.no/fiocchi-fiocchi-9mm-115-grs-fmj-ammunisjon/p/9000961_2_Style",
