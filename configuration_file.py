@@ -5,12 +5,13 @@
 # 3. price - The current price of the product, initialized to 1.0, will be a dynamic value fetched from the website.
 
 
-price_dict = {"Fiocchi 9mm 115 grs": {
-    "url": "https://www.xxl.no/fiocchi-fiocchi-9mm-115-grs-fmj-ammunisjon/p/9000961_2_Style",
-    "price_tag": '[data-testid="selling-price"]',
-    "subscribers": ["workaholix55@gmail.com", "even.vehus@gmail.com"],
-    "price": 1.0
-},
+price_dict = {
+    "Fiocchi 9mm 115 grs": {
+        "url": "https://www.xxl.no/fiocchi-fiocchi-9mm-115-grs-fmj-ammunisjon/p/9000961_2_Style",
+        "price_tag": '[data-testid="selling-price"]',
+        "subscribers": ["workaholix55@gmail.com", "even.vehus@gmail.com"],
+        "price": 1.0
+    },
     "Fiocchi 9mm 124 grs": {
         "url": "https://www.xxl.no/fiocchi-cart-9-luger-fmj-124-ram-ammunisjon/p/1185862_1_Style",
         "price_tag": '[data-testid="selling-price"]',
