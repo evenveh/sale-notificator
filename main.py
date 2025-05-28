@@ -10,7 +10,7 @@ def update_all_prices():
         price = page_scraper.fetch_item_price(url=details["url"],
                                               price_tag=details["price_tag"])
         details["price"] = price
-        print(f"{product}: {price} NOK")
+        print(f"{product}: {price}kr")
     return price_dict
 
 
