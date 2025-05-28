@@ -21,7 +21,7 @@ def main_loop():
 
         for subscriber in subscribers:
             message = craft_message_for_updated_prices(price_dict, subscriber)
-            send_mail(message)
+            send_mail(message, subscriber)
             time.sleep(10)
 
         time.sleep(60 * 60 * 24)
