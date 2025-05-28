@@ -39,12 +39,13 @@ price_dict = {
 }
 
 # ___________Overvåke produkter på outletside___________
-product_page_dict = {"Evenstad outlet": {
-    "url": "https://evenstadmusikk.no/search?q=lagersalg&Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234|PrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7",
-    "product_class_name": "WebPubElement.pub-productlisting",
-    "product_name_tag": "AddHeader1",
-    "product_sale_tag": "YouSavePercentLabel",
-    "subscribers": ["workaholix55@gmail.com"],
-    "products_on_page": []  # Could be a dict also
+product_page_dict = {
+    "Evenstad outlet": {
+        "url": "https://evenstadmusikk.no/search?q=lagersalg&Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234|PrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7",
+        "product_class_name": "WebPubElement.pub-productlisting",
+        "product_name_tag": "AddHeader1",
+        "product_sale_tag": "YouSavePercentLabel",
+        "subscribers": ["workaholix55@gmail.com"],
+        "products_on_page": []  # Could be a dict also
 }
 }
