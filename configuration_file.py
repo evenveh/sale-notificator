@@ -8,7 +8,7 @@
 price_dict = {"Fiocchi 9mm 115 grs": {
     "url": "https://www.xxl.no/fiocchi-fiocchi-9mm-115-grs-fmj-ammunisjon/p/9000961_2_Style",
     "price_tag": '[data-testid="selling-price"]',
-    "subscribers": ["workaholix55@gmail.com"],
+    "subscribers": ["workaholix55@gmail.com", "even.vehus@gmail.com"],
     "price": 1.0
 },
     "Fiocchi 9mm 124 grs": {
@@ -20,7 +20,7 @@ price_dict = {"Fiocchi 9mm 115 grs": {
     "CCI 22lr": {
         "url": "https://www.xxl.no/cci-cci-standard-22-lr-40gr-lrn-gun-rifle-ammunisjon/p/1189986_1_Style",
         "price_tag": '[data-testid="selling-price"]',
-        "subscribers": ["workaholix55@gmail.com"],
+        "subscribers": ["workaholix55@gmail.com", "Robin"],
         "price": 1.0
     },
     "30-06": {
