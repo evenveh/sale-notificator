@@ -4,7 +4,8 @@ import time
 from configuration_file import price_dict
 
 
-def update_all_prices(page_scraper):
+def update_all_prices():
+    page_scraper = PageScraper()
     for product, details in price_dict.items():
         price = page_scraper.fetch_item_price(url=details["url"],
                                               price_tag=details["price_tag"])
@@ -14,10 +15,8 @@ def update_all_prices(page_scraper):
 
 
 def main_loop():
-    page_scraper = PageScraper()
-
     while True:
-        price_dict = update_all_prices(page_scraper)
+        price_dict = update_all_prices()
         subscribers = sort_recipients_and_subscriptions(price_dict)
 
         for subscriber in subscribers:
