@@ -25,7 +25,7 @@ def main_loop():
     while True:
         price_dict = update_all_prices()
         subscribers = find_all_subscribers(price_dict)
-        send_mail_to_subscibers(subscribers)
+        send_mail_to_subscibers(subscribers, price_dict)
 
         time.sleep(60 * 60 * 24)
 
