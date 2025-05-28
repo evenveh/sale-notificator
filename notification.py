@@ -7,6 +7,14 @@ def unwrap_product_string(products):
     return product_string
 
 
+def craft_message_for_updated_prices(price_dict):
+    price_lines = [f"{key.replace(' ', '_')}: {value['price']}" for key, value in price_dict.items()]
+
+    msg = "Subject: Price update\n\nHere are the prices:\n\n" + "\n".join(price_lines)
+
+    return msg
+
+
 def send_mail(message):
     try:
         with smtplib.SMTP("smtp.gmail.com") as connection:
