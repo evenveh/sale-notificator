@@ -1,8 +1,6 @@
-from notification import send_mail, unwrap_product_string, craft_message_for_updated_prices
+from notification import send_mail, craft_message_for_updated_prices
 from sale_finder import PageScraper
-from sale_comparator import compare_products_on_page, create_message
 import time
-from get_secrets import get_secret
 from configuration_file import price_dict
 
 
@@ -26,4 +24,4 @@ def main_loop(page_scraper):
 
 if __name__ == "__main__":
     page_scraper = PageScraper()
-    initial_sales = main_loop(page_scraper)
+    main_loop(page_scraper)
