@@ -28,13 +28,13 @@ def craft_message_for_updated_prices(price_dict, subscriber):
     return msg
 
 
-def send_mail(message):
+def send_mail(message, subscriber):
     try:
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
             connection.login(user=get_secret("FROM_EMAIL"), password=get_secret("PASSWORD"))
             connection.sendmail(from_addr=get_secret("FROM_EMAIL"),
-                                to_addrs=get_secret("RECIPIENT"),
+                                to_addrs=subscriber,
                                 msg=message)
 
         print(f"An email has been sent to {get_secret("RECIPIENT")}")
