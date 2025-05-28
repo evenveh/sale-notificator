@@ -59,10 +59,8 @@ class PageScraper:
                 price_element = driver.find_element(By.CSS_SELECTOR, price_tag)
                 price_text = price_element.get_attribute("textContent").split("pr")[0].strip()
 
-                print("price:", price_text)
-                print(price_element)
 
             except Exception as e:
                 print(f"Error: {e}")
 
-        return price_element
+        return price_text
