@@ -1,4 +1,4 @@
-from notification import send_mail, craft_message_for_updated_prices
+from notification import send_mail, craft_message_for_updated_prices, sort_recipients_and_subscriptions
 from sale_finder import PageScraper
 import time
 from configuration_file import price_dict
@@ -16,8 +16,12 @@ def update_all_prices(page_scraper):
 def main_loop(page_scraper):
     while True:
         price_dict = update_all_prices(page_scraper)
-        message = craft_message_for_updated_prices(price_dict)
-        send_mail(message)
+        subscribers = sort_recipients_and_subscriptions(price_dict)
+
+        for subscriber in subscribers:
+            message = craft_message_for_updated_prices(price_dict, subscriber)
+            send_mail(message)
+            time.sleep(10)
 
         time.sleep(60 * 60 * 24)
 
