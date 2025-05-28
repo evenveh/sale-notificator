@@ -15,7 +15,7 @@ price_dict = {
     "Fiocchi 9mm 124 grs": {
         "url": "https://www.xxl.no/fiocchi-cart-9-luger-fmj-124-ram-ammunisjon/p/1185862_1_Style",
         "price_tag": '[data-testid="selling-price"]',
-        "subscribers": ["workaholix55@gmail.com", "robin.frohaug@gmail.com", "even.vehus@gmail.com"],
+        "subscribers": ["workaholix55@gmail.com", "even.vehus@gmail.com"],
         "price": 1.0
     },
     "CCI 22lr": {
