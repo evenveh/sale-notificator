@@ -13,7 +13,9 @@ def update_all_prices(page_scraper):
     return price_dict
 
 
-def main_loop(page_scraper):
+def main_loop():
+    page_scraper = PageScraper()
+
     while True:
         price_dict = update_all_prices(page_scraper)
         subscribers = sort_recipients_and_subscriptions(price_dict)
@@ -27,5 +29,4 @@ def main_loop(page_scraper):
 
 
 if __name__ == "__main__":
-    page_scraper = PageScraper()
-    main_loop(page_scraper)
+    main_loop()
