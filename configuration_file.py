@@ -16,7 +16,7 @@ price_dict = {
     "Fiocchi 9mm 124 grs": {
         "url": "https://www.xxl.no/fiocchi-cart-9-luger-fmj-124-ram-ammunisjon/p/1185862_1_Style",
         "price_tag": '[data-testid="selling-price"]',
-        "subscribers": ["workaholix55@gmail.com","robin.frohaug@gmail.com"],
+        "subscribers": ["workaholix55@gmail.com", "robin.frohaug@gmail.com"],
         "price": 1.0,
         "threshold": 155.0
     },
@@ -40,7 +40,15 @@ price_dict = {
         "subscribers": ["workaholix55@gmail.com"],
         "price": 1.0,
         "threshold": 75.0
-    }
+    },
+
+    "Sykkelbukse, svart, herre": {
+        "url": "https://www.xxl.no/gore-wear-c3-ws-bibtights-w-pad-22-23-sykkelbukse-herre-svart/p/1150289_1_Style",
+        "price_tag": '[data-testid="selling-price"]',
+        "subscribers": ["steinar@vehus.com"],
+        "price": 1.0,
+        "threshold": 1000.0
+    },
 }
 
 # ___________Overvåke produkter på outletside___________
@@ -52,5 +60,5 @@ product_page_dict = {
         "product_sale_tag": "YouSavePercentLabel",
         "subscribers": ["workaholix55@gmail.com"],
         "products_on_page": []  # Could be a dict also
-}
+    }
 }
