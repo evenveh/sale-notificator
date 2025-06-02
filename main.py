@@ -17,7 +17,8 @@ def update_all_prices():
 def send_mail_to_subscibers(subscribers, price_dict):
     for subscriber in subscribers:
         message = craft_message_for_updated_prices(price_dict, subscriber)
-        send_mail(message, subscriber)
+        if message:
+            send_mail(message, subscriber)
         time.sleep(10)
 
 
@@ -28,6 +29,7 @@ def main_loop():
         send_mail_to_subscibers(subscribers, price_dict)
 
         time.sleep(60 * 60 * 24)
+        print("Checking prices...")
 
 
 if __name__ == "__main__":
