@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import re
 
 
 class PageScraper:
@@ -59,8 +60,13 @@ class PageScraper:
                 price_element = driver.find_element(By.CSS_SELECTOR, price_tag)
                 price_text = price_element.get_attribute("textContent").split("pr")[0].strip()
 
+                cleaned_text = re.sub(r'[^\d,\.]', '', price_text)  # Remove currency and text
+                cleaned_text = cleaned_text.replace(',', '.')  # If comma is used as decimal separator
+                price = float(cleaned_text)
+
+
 
             except Exception as e:
                 print(f"Error: {e}")
 
-        return price_text
+        return price
