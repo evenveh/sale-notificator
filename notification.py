@@ -21,11 +21,13 @@ def find_all_subscribers(price_dict):
 
 def craft_message_for_updated_prices(price_dict, subscriber):
     price_lines = [f"{key}: {value['price']}" for key, value in price_dict.items() if
-                   subscriber in value["subscribers"]]
-
-    msg = "Subject: Price update\n\nHere are the prices:\n\n" + "\n".join(price_lines)
-
-    return msg
+                   subscriber in value["subscribers"]
+                   and value["price"] < value["threshold"]]
+    if price_lines:
+        msg = ("Subject: Price update\n\nThe following products are announced to a lower price than the threshold "
+               "you have decided:\n\n") + "\n".join(price_lines)
+        return msg
+    return None
 
 
 def send_mail(message, subscriber):
