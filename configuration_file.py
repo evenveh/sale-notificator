@@ -67,6 +67,6 @@ product_page_dict = {
         "product_name_tag": "AddHeader1",
         "product_sale_tag": "YouSavePercentLabel",
         "subscribers": ["workaholix55@gmail.com"],
-        "products_on_page": []  # Could be a dict also
+        "products_on_page": {}
     }
 }
