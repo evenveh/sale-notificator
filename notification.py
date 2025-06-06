@@ -2,15 +2,11 @@ import smtplib
 from get_secrets import get_secret
 
 
-def unwrap_product_string(products):
-    product_string = "\n".join(products)
-    return product_string
-
-
 def find_all_subscribers(price_dict):
     """ Sorts and returns a list of unique subscribers from the price dictionary.
-    :param price_dict: A dictionary containing products and related product information, including subscribers.
-    :return: a list of unique subscribers from the price_dict
+    :param price_dict: A dictionary containing products as keys and dictionaries as values. Each of these
+    dictionaries have information related to the product, subscribers being one of their values.
+    :return: a list of all subscribers found in price_dict without duplicates.
     """
     subscribers = []
     for product, details in price_dict.items():
