@@ -14,6 +14,6 @@ def main_loop(page_scraper, price_dict):
 
 
 if __name__ == "__main__":
-    price_dict = load_csv_to_price_dict("price_dict.csv")
+    price_dict = load_csv_to_price_dict("product_overview.csv")
     page_scraper = PageScraper()
     main_loop(page_scraper, price_dict)
