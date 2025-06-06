@@ -20,7 +20,7 @@ def craft_message_for_updated_prices(price_dict, subscriber):
                    subscriber in value["subscribers"]
                    and value["price"] < value["threshold"]]
     if price_lines:
-        msg = ("Subject: Price update\n\nThe following products are announced to a lower price than the threshold "
+        msg = ("Subject: Price update\n\nThe following products are announced to a lower price your desired threshold "
                "you have decided:\n\n") + "\n".join(price_lines)
         return msg
     return None
