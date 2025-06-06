@@ -1,35 +1,18 @@
-from notification import send_mail, craft_message_for_updated_prices, find_all_subscribers
+from notification import find_all_subscribers, send_mail_to_subscibers
 from sale_finder import PageScraper
-import time
+from time import sleep
 from configuration_file import price_dict
 
 
-def update_all_prices():
-    page_scraper = PageScraper()
-    for product, details in price_dict.items():
-        price = page_scraper.fetch_item_price(url=details["url"],
-                                              price_tag=details["price_tag"])
-        details["price"] = price
-        print(f"{product}: {price}kr")
-    return price_dict
-
-
-def send_mail_to_subscibers(subscribers, price_dict):
-    for subscriber in subscribers:
-        message = craft_message_for_updated_prices(price_dict, subscriber)
-        if message:
-            send_mail(message, subscriber)
-        time.sleep(10)
-
-
-def main_loop():
+def main_loop(page_scraper, price_dict):
     while True:
-        price_dict = update_all_prices()
+        price_dict = page_scraper.update_all_prices(price_dict)
         subscribers = find_all_subscribers(price_dict)
         send_mail_to_subscibers(subscribers, price_dict)
 
-        time.sleep(60 * 60 * 24)
+        sleep(60 * 60 * 24)
 
 
 if __name__ == "__main__":
-    main_loop()
+    page_scraper = PageScraper()
+    main_loop(page_scraper, price_dict)
