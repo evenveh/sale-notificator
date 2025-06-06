@@ -1,4 +1,4 @@
-## _________________Overvåke priser___________________
+## _________________Products for price updates___________________
 # The configuration file includes a dictionary of products. Each product has a sub-dictionary with information:
 # 1. URL - The URL of the product page
 # 2. price_tag - The CSS selector to find the price on the product page
@@ -59,7 +59,7 @@ price_dict = {
     },
 }
 
-# ___________Overvåke produkter på outletside___________
+# ___________Products on outlet page___________
 product_page_dict = {
     "Evenstad outlet": {
         "url": "https://evenstadmusikk.no/search?q=lagersalg&Filter=ProdusentID%C2%A41:ProdusentID%C2%A41_234|PrdGruppeLev1ID%C2%A41:PrdGruppeLev1ID%C2%A41_7",
