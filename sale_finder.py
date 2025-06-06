@@ -70,3 +70,11 @@ class PageScraper:
                 print(f"Error: {e}")
 
         return price
+
+    def update_all_prices(self, price_dict):
+        for product, details in price_dict.items():
+            price = self.fetch_item_price(url=details["url"],
+                                          price_tag=details["price_tag"])
+            details["price"] = price
+            print(f"{product}: {price}kr")
+        return price_dict
