@@ -19,7 +19,6 @@ class TestGetSales(unittest.TestCase):
             )
         ]
 
-
         url = "https://www.example.com"
         page_scraper = PageScraper()
         result = page_scraper.find_products_on_page(url)
