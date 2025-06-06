@@ -10,7 +10,7 @@ def main_loop(page_scraper, price_dict):
         subscribers = find_all_subscribers(price_dict)
         send_mail_to_subscibers(subscribers, price_dict)
 
-        sleep(60 * 60 * 24)
+        sleep(60 * 60 * 12)
 
 
 if __name__ == "__main__":
