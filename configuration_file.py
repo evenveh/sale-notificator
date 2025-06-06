@@ -23,21 +23,21 @@ price_dict = {
     "CCI 22lr": {
         "url": "https://www.xxl.no/cci-cci-standard-22-lr-40gr-lrn-gun-rifle-ammunisjon/p/1189986_1_Style",
         "price_tag": '[data-testid="selling-price"]',
-        "subscribers": ["even.vehus@gmail.com"],
+        "subscribers": ["even.vehus@gmail.com", "eskil.vehus@gmail.com"],
         "price": 1.0,
         "threshold": 55
     },
     "30-06": {
         "url": "https://www.xxl.no/fiocchi-30-06-springfield-147-fmj-ammunisjon/p/1147062_1_Style",
         "price_tag": '[data-testid="selling-price"]',
-        "subscribers": ["even.vehus@gmail.com"],
+        "subscribers": ["even.vehus@gmail.com", "eskil.vehus@gmail.com"],
         "price": 1.0,
         "threshold": 200.0
     },
     "Fiocchi Steel 12/70": {
         "url": "https://www.xxl.no/fiocchi-fsteel-24g-hagleammunisjon/p/1224197_1_Style",
         "price_tag": '[data-testid="selling-price"]',
-        "subscribers": ["even.vehus@gmail.com"],
+        "subscribers": ["even.vehus@gmail.com", "eskil.vehus@gmail.com"],
         "price": 1.0,
         "threshold": 75.0
     },
@@ -48,6 +48,14 @@ price_dict = {
         "subscribers": ["steinar@vehus.com"],
         "price": 1.0,
         "threshold": 1000.0
+    },
+
+    "100 % Whey Protein 3 kg, proteinpulver": {
+        "url": "https://www.xxl.no/proteinfabrikken-100-whey-protein-3-kg-proteinpulver/p/1093331_1_Style",
+        "price_tag": '[data-testid="selling-price"]',
+        "subscribers": ["even.vehus@gmail.com"],
+        "price": 1.0,
+        "threshold": 700
     },
 }
 
