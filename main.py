@@ -1,7 +1,7 @@
 from notification import find_all_subscribers, send_mail_to_subscibers
 from sale_finder import PageScraper
 from time import sleep
-from configuration_file import price_dict
+from configuration_file import load_csv_to_price_dict
 
 
 def main_loop(page_scraper, price_dict):
@@ -14,5 +14,6 @@ def main_loop(page_scraper, price_dict):
 
 
 if __name__ == "__main__":
+    price_dict = load_csv_to_price_dict("price_dict.csv")
     page_scraper = PageScraper()
     main_loop(page_scraper, price_dict)
