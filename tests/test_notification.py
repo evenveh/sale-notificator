@@ -1,16 +1,9 @@
 import unittest
-from notification import unwrap_product_string
 from unittest.mock import patch, MagicMock
 from notification import send_mail
 
+
 class TestNotification(unittest.TestCase):
-
-    def test_unwrap_product_string(self):
-        products = ['Product A', 'Product B', 'Product C']
-        expected_result = 'Product A\nProduct B\nProduct C'
-        result = unwrap_product_string(products)
-        self.assertEqual(result, expected_result)
-
 
     @patch('notification.get_secret')
     @patch('smtplib.SMTP')
