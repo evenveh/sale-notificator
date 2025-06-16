@@ -5,7 +5,10 @@ from configuration_file import load_csv_to_price_dict
 
 def main(page_scraper, price_dict):
     """
-    Updates all product prices, finds all subscribers, and sends notifications.
+    The main flow of the program:
+    1. Updating prices for all products in price_dict.
+    2. Finds all subscribers in price_dict.
+    3. Sends email notifications to subscribers.
 
     :param page_scraper: An instance of PageScraper.
     :param price_dict: Dictionary containing product and subscriber data.
