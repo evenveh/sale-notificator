@@ -6,7 +6,7 @@ from sale_finder import PageScraper
 class TestGetSales(unittest.TestCase):
 
     @patch("sale_finder.webdriver.Chrome")
-    def test_get_sales(self, mock_webdriver):
+    def test_find_products_on_page(self, mock_webdriver):
         mock_driver = MagicMock()
         mock_webdriver.return_value.__enter__.return_value = mock_driver
 
