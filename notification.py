@@ -19,7 +19,7 @@ def find_all_subscribers(price_dict):
 
 def craft_message_for_updated_prices(price_dict, subscriber):
     """
-    Crafts an email message for a subscriber based on updated product prices.
+    Crafts an email message for a subscriber if the subscriber has products with prices below their threshold.
 
     This function checks the `price_dict` for products subscribed to by the given `subscriber`.
     If the product's price is below the subscriber's threshold, it includes the product in the email message.
@@ -29,23 +29,24 @@ def craft_message_for_updated_prices(price_dict, subscriber):
     :param subscriber: The email address of the subscriber to whom the message is being crafted.
     :return: A formatted email message string if there are products below the threshold; otherwise, None.
     """
-    price_lines = [f"{key}: {value['price']}" for key, value in price_dict.items() if
-                   subscriber in value["subscribers"]
-                   and value["price"] < value["threshold"]]
+    price_lines = [f"{product_name}: {product_information['price']}" for product_name, product_information in price_dict.items() if
+                   subscriber in product_information["subscribers"]
+                   and product_information["price"] < product_information["threshold"]]
     if price_lines:
-        msg = ("Subject: Price update\n\nThe following products are announced to a lower price your desired threshold "
-               "you have decided:\n\n") + "\n".join(price_lines)
+        msg = (("Subject: Price update\n\n"
+               "The following products are announced to a lower price your desired threshold you have decided:\n\n") +
+               "\n".join(price_lines))
         return msg
     return None
 
 
 def send_mail_to_subscribers(subscribers, price_dict):
     """
-        Sends email notifications to a list of subscribers about updated product prices.
+        Sends email notifications to each subscriber in a list of subscribers.
 
         This function iterates through the list of subscribers and crafts a message for each subscriber
         based on the `price_dict` (only if price is below threshold, but that logic is in the
-        craft_message_for_updated_prices function. If a message is successfully crafted, it sends the email using the
+        craft_message_for_updated_prices function). If a message is successfully crafted, it sends the email using the
         `send_mail` function. A delay is added between sending emails.
 
         :param subscribers: A list of all subscribing e-mail addresses contained in price_dict.
@@ -56,7 +57,7 @@ def send_mail_to_subscribers(subscribers, price_dict):
         message = craft_message_for_updated_prices(price_dict, subscriber)
         if message:
             send_mail(message, subscriber)
-        sleep(10)
+            sleep(10)
 
 
 def send_mail(message, receiver):
