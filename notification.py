@@ -39,7 +39,7 @@ def craft_message_for_updated_prices(price_dict, subscriber):
     return None
 
 
-def send_mail_to_subscibers(subscribers, price_dict):
+def send_mail_to_subscribers(subscribers, price_dict):
     """
         Sends email notifications to a list of subscribers about updated product prices.
 
