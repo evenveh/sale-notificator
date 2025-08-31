@@ -19,5 +19,5 @@ def main(price_dict):
 
 
 if __name__ == "__main__":
-    price_dict = load_csv_to_price_dict("product_overview.csv")
+    price_dict = load_csv_to_price_dict("/app/product_overview.csv")
     main(price_dict)
