@@ -2,7 +2,7 @@ services:
   myapp:
     image: evenve/sale-notificator:latest
     volumes:
-      - ./product_overview.csv:/app/product_overview.csv  # mount local CSV
+      - ./product_overview.csv:/app/product_overview.csv
     secrets:
       - FROM_EMAIL
       - PASSWORD
