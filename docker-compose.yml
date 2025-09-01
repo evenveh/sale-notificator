@@ -1,6 +1,6 @@
 services:
   myapp:
-    image: sale-notificator:latest
+    image: evenve/sale-notificator:latest
     volumes:
       - ./product_overview.csv:/app/product_overview.csv
     secrets:
