@@ -1,6 +1,6 @@
 from notification import find_all_subscribers, send_mail_to_subscribers
 from sale_finder import PageScraper
-from configuration_file import load_csv_to_price_dict
+from utility_functions import load_csv_to_price_dict
 
 
 def main(price_dict):
