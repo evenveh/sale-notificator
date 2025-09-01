@@ -1,7 +1,6 @@
 import csv
 
 
-# _________Some utility functions to convert the price dictionary as csv, and convert a csv to a price dictionary_________
 def load_csv_to_price_dict(filename="price_dict.csv"):
     """
     Converts a CSV file back into a dictionary identical to the original price_dict.
