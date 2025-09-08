@@ -6,6 +6,7 @@ from time import sleep
 def find_all_subscribers(price_dict):
     """
     Sorts and returns a list of unique subscribers from the price dictionary.
+
     :param price_dict: A dictionary containing products as keys and dictionaries as values. Each of these
     dictionaries have information related to the product, subscribers being one of their values.
     :return: a list of all subscribers found in price_dict without duplicates.
@@ -29,12 +30,13 @@ def craft_message_for_updated_prices(price_dict, subscriber):
     :param subscriber: The email address of the subscriber to whom the message is being crafted.
     :return: A formatted email message string if there are products below the threshold; otherwise, None.
     """
-    price_lines = [f"{product_name}: {product_information['price']}" for product_name, product_information in price_dict.items() if
+    price_lines = [f"{product_name}: {product_information['price']}" for product_name, product_information in
+                   price_dict.items() if
                    subscriber in product_information["subscribers"]
                    and product_information["price"] < product_information["threshold"]]
     if price_lines:
         msg = (("Subject: Price update\n\n"
-               "The following products are announced to a lower price your desired threshold you have decided:\n\n") +
+                "The following products are announced to a lower price your desired threshold you have decided:\n\n") +
                "\n".join(price_lines))
         return msg
     return None
