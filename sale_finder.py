@@ -49,7 +49,7 @@ class PageScraper:
 
     def fetch_item_price(self,
                          url,
-                         price_tag='[data-testid="selling-price"]'):
+                         price_tag):
 
         with webdriver.Chrome(service=self.service, options=self.chrome_options) as driver:
 
