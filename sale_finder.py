@@ -33,7 +33,7 @@ class PageScraper:
             for product in products:
                 try:
                     name_tag = product.find_element(By.CLASS_NAME, product_name_tag)
-                    name = name_tag.text.strip() if name_tag else "Unknown Guitar"
+                    name = name_tag.text.strip() if name_tag else "Unknown Product"
 
                     sale_tag = product.find_element(By.CLASS_NAME, product_sale_tag)
                     sale = sale_tag.text.strip() if sale_tag else "No discount"
