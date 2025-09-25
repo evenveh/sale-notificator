@@ -1,4 +1,5 @@
 import csv
+from urllib.parse import urlparse
 
 
 def load_csv_to_price_dict(filename="price_dict.csv"):
@@ -45,3 +46,22 @@ def save_price_dict_to_csv(price_dict, filename="price_dict.csv"):
                 details["price"],
                 details["threshold"]
             ])
+
+
+def identify_domain(url):
+    parsed = urlparse(url)
+    return parsed.hostname
+
+
+def domain_and_key_mapper(url):
+    domain = identify_domain(url)
+
+    with open("page_configuration.csv", newline="") as f:
+        reader = csv.DictReader(f)
+        domain_key_map = {row["Domain"]: row["Key"] for row in reader}
+
+    if domain in domain_key_map:
+        return domain_key_map[domain]
+    else:
+        raise ValueError(f"Domain '{domain}' not found in configuration. Maybe the domain has not been configured yet? "
+                         f"Try adding it to page_configuration.csv.")
