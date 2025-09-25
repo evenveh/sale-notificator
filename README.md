@@ -31,3 +31,7 @@ This is configured in a separate csv called page_configuration.csv, which would 
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | https://examplewebpage1.com/ | [data-testid="selling-price"]                                                                                                |
 | https://examplewebpage2.com/ | span[itemprop="price"]                                                                                                       |
+
+
+1. The domain is the base URL of the website.
+2. The key is the css selector used to find the price on the product page.
