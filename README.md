@@ -36,7 +36,7 @@ This is configured in a separate csv called page_configuration.csv, which would 
 1. The domain is the base URL of the website.
 2. The key is the css selector used to find the price on the product page.
 
-## H2 Header
+## Secrets
 Additionally, an email used to send notifications must be configured. The email is stored in a text file called FROM_EMAIL.txt,
 which only contains the email in written words. Then there is a file called PASSWORD.txt, which contains the password for that email account.
 These values are stored locally in a folder called secrets, stored in the root directory of the project.
