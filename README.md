@@ -10,13 +10,11 @@ where price_dict is a dictionary create based on a csv called product overview, 
 Such csv would look something like:
 
 
-+-----------------------------------------------+-------------------------------------------------------------+--------------------------------------------------------------+-------+-----------+
-| Product Name                                  | URL                                                         | Subscribers                                                  | Price | Threshold |
-+-----------------------------------------------+-------------------------------------------------------------+--------------------------------------------------------------+-------+-----------+
-| Offroad Bike 2000                             | https://whereveryoubuybikes.com/                            | examplemail1@gmail.com                                       |   1.0 |    8000.0 |
-| Samsung S25 Ultra                             | https://mobilesandelectronics.com/                          | examplemail1@gmail.com, examplemail2@gmail.com, ...          |   1.0 |     160.0 |
-| Seagate 2TB hard drive                        | https://mobilesandelectronics.com/                          | examplemail1@gmail.com, examplemail2@gmail.com, ...          |   1.0 |     165.0 |
-+-----------------------------------------------+-------------------------------------------------------------+--------------------------------------------------------------+-------+-----------+
+| Product Name          | URL                                | Subscribers                                   | Price | Threshold |
+|-----------------------|------------------------------------|-----------------------------------------------|-------|-----------|
+| Offroad Bike 2000     | [link](https://whereveryoubuybikes.com/) | examplemail1@gmail.com                        | 1.0   | 8000.0    |
+| Samsung S25 Ultra     | [link](https://mobilesandelectronics.com/) | examplemail1@gmail.com, examplemail2@gmail.com, ... | 1.0   | 160.0     |
+| Seagate 2TB hard drive| [link](https://mobilesandelectronics.com/) | examplemail1@gmail.com, examplemail2@gmail.com, ... | 1.0   | 165.0     |
 
 1. The product name can be anything, as it is just for reference. 
 2. The URL is the URL to the product page.
