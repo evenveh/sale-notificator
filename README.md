@@ -23,3 +23,11 @@ product_overview.csv would look something like this:
 5. Threshold is the limit to which the price must drop to trigger a notification.
 
   The program is designed to be run periodically, e.g., via a cron job, to check for price updates and notify subscribers accordingly.
+  
+In order for a page to be scraped, the program must know what css selector to use to find the price on the page. 
+This is configured in a separate csv called page_configuration.csv, which would look something like this:
+
+| Domain                       | Key                                                                                                                          |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| https://examplewebpage1.com/ | [data-testid="selling-price"]                                                                                                |
+| https://examplewebpage2.com/ | span[itemprop="price"]                                                                                                       |
