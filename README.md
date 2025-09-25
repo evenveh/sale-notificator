@@ -30,8 +30,8 @@ This is configured in a separate csv called page_configuration.csv, which would 
 
 | Domain                       | Key                                                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| https://examplewebpage1.com/ | [data-testid="selling-price"]                                                                                                |
-| https://examplewebpage2.com/ | span[itemprop="price"]                                                                                                       |
+| https://examplewebpage1.com/ | div.product-price > span                                                                                              |
+| https://examplewebpage2.com/ | div[class*="product__price"] span.amount                                                                                                   |
 
 
 1. The domain is the base URL of the website.
