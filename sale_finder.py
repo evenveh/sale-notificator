@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import re
-
+from utility_functions import domain_and_key_mapper
 
 class PageScraper:
     def __init__(self):
@@ -74,7 +74,7 @@ class PageScraper:
     def update_all_prices(self, price_dict):
         for product, details in price_dict.items():
             price = self.fetch_item_price(url=details["url"],
-                                          price_tag=details["price_tag"])
+                                          price_tag=domain_and_key_mapper(url=details["url"]))
             details["price"] = price
             print(f"{product}: {price}kr")
         return price_dict
