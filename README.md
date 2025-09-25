@@ -5,7 +5,9 @@ The main flow of the program:
 2. Finds all subscribers in price_dict.
 3. Sends email notifications to subscribers if prices are lower than threshold.
 
-where price_dict is a dictionary based on a csv called product overview, containing product and subscriber data.
+The program is designed to be ran periodically, e.g., via a cron job, to check for price updates and notify subscribers accordingly.
+
+price_dict is a dictionary based on a csv called product overview, containing product and subscriber data.
 product_overview.csv would look something like this:
 
 
@@ -21,7 +23,7 @@ product_overview.csv would look something like this:
 4. Price. This column is used by the program to store and compare the last known price with the threshold.
 5. Threshold is the limit to which the price must drop to trigger a notification.
 
-  The program is designed to be ran periodically, e.g., via a cron job, to check for price updates and notify subscribers accordingly.
+
   
 In order for a page to be scraped, the program must know what css selector to use to find the price on the page. 
 This is configured in a separate csv called page_configuration.csv, which would look something like this:
