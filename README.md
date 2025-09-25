@@ -1,8 +1,9 @@
 # Requirements
-  The main flow of the program:
-    1. Updates prices for all products in price_dict.
-    2. Finds all subscribers in price_dict.
-    3. Sends email notifications to subscribers if prices are lower than threshold.
+The main flow of the program:
+
+1. Updates prices for all products in price_dict.
+2. Finds all subscribers in price_dict.
+3. Sends email notifications to subscribers if prices are lower than threshold.
 
 where price_dict is a dictionary based on a csv called product overview, containing product and subscriber data.
 product_overview.csv would look something like this:
