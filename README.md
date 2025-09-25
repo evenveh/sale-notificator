@@ -6,8 +6,8 @@ For now:
     2. Finds all subscribers in price_dict.
     3. Sends email notifications to subscribers if prices are lower than threshold.
 
-where price_dict is a dictionary create based on a csv called product overview, containing product and subscriber data.
-Such csv would look something like:
+where price_dict is a dictionary based on a csv called product overview, containing product and subscriber data.
+product_overview.csv would look something like this:
 
 
 | Product Name | URL                          | Subscribers                                   | Price | Threshold |
