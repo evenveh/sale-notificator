@@ -4,14 +4,6 @@ from utility_functions import load_csv_to_price_dict
 
 
 def main(price_dict):
-    """
-    The main flow of the program:
-    1. Updates prices for all products in price_dict.
-    2. Finds all subscribers in price_dict.
-    3. Sends email notifications to subscribers if prices are lower than threshold.
-
-    :param price_dict: Dictionary containing product and subscriber data.
-    """
     page_scraper = PageScraper()
     price_dict = page_scraper.update_all_prices(price_dict)
     subscribers = find_all_subscribers(price_dict)
