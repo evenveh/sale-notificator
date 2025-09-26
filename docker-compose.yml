@@ -3,6 +3,7 @@ services:
     image: evenve/sale-notificator:latest
     volumes:
       - ./product_overview.csv:/app/product_overview.csv
+      - ./page_configuration.csv:/app/page_configuration.csv
     secrets:
       - FROM_EMAIL
       - PASSWORD

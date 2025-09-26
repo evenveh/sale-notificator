@@ -15,7 +15,6 @@ def load_csv_to_price_dict(filename="price_dict.csv"):
         for row in reader:
             price_dict[row["Product Name"]] = {
                 "url": row["URL"],
-                "price_tag": row["Price Tag"],
                 "subscribers": row["Subscribers"].split(", "),
                 "price": float(row["Price"]),
                 "threshold": float(row["Threshold"])
@@ -56,7 +55,7 @@ def identify_domain(url):
 def domain_and_key_mapper(url):
     domain = identify_domain(url)
 
-    with open("page_configuration.csv", newline="") as f:
+    with open("/app/page_configuration.csv", newline="") as f:
         reader = csv.DictReader(f)
         domain_key_map = {row["Domain"]: row["Key"] for row in reader}
 
