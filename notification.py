@@ -53,7 +53,7 @@ def craft_message_for_updated_prices(price_dict, subscriber):
     price_lines = [f"{product_name}: {product_information['price']}" for product_name, product_information in
                    price_dict.items() if
                    subscriber in product_information["subscribers"]
-                   and product_information["price"] < product_information["threshold"]]
+                   and product_information["price"] and product_information["price"] < product_information["threshold"]]
     if price_lines:
         msg = (("Subject: Price update\n\n"
                 "The following products are announced to a lower price your desired threshold you have decided:\n\n") +
