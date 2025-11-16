@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import re
@@ -52,19 +54,16 @@ class PageScraper:
                          price_tag):
 
         with webdriver.Chrome(service=self.service, options=self.chrome_options) as driver:
-
-            driver.get(url)
-            time.sleep(2)
-
+            price = None
             try:
-                price_element = driver.find_element(By.CSS_SELECTOR, price_tag)
+                driver.get(url)
+                wait = WebDriverWait(driver, 5)
+                price_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, price_tag)))
                 price_text = price_element.get_attribute("textContent").split("pr")[0].strip()
 
                 cleaned_text = re.sub(r'[^\d,\.]', '', price_text)
                 cleaned_text = cleaned_text.replace(',', '.')
                 price = float(cleaned_text)
-
-
 
             except Exception as e:
                 print(f"Error: {e}")
