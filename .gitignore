@@ -3,6 +3,9 @@ secrets/PASSWORD.txt
 secrets/RECIPIENT.txt
 secrets/URL_IBANEZ_GUITARS_AND_BASS.txt
 
+__pycache__/
+*.pyc
+
 workspace.xml
 
 product_overview.csv
